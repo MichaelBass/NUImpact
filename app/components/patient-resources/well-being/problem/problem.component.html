@@ -1,0 +1,57 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/well-being">Enhancing Well-Being</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Problem Solving</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Problem Solving</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+
+                    <p class="detail-pera pt-pb">Being diagnosed with cancer brings new changes to your life. These changes can be overwhelming. This section will touch on how you can effectively address these challenges through problem solving.</p>
+                    <p class="detail-pera pt-pb">Some challenging situations can be changed, while others can't. To deal effectively with a situation it first helps to determine:</p>
+                    <ul class="left-side font-14 mt-30">
+                        <li>What situations can be changed (the things we can control).</li>
+                        <li>What situations can't be changed (the uncontrollable)</li> 
+                    </ul>                    
+                    <p class="detail-pera pt-pb">Once you've identified the situations you can control, you can then consider problem-solving  strategies to address those situations.</p>
+                    <p class="bold-text">Problem Solving Strategies</p>
+                    <p class="detail-pera pt-pb">The following 32-minute audio recording on problem-solving strategies will inform you how to:</p> 
+                     <ul class="left-side font-14 mt-30">
+                        <li>Identify and define the problem.</li>
+                        <li>Gather information.</li>
+                        <li>Plan your action.</li>
+                        <li>Carry out your plan.</li>
+                        <li>Evaluate your plan and make necessary changes.</li>
+                    </ul>
+                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li><a [routerLink]="'/patient-resources/well-being/talking'">Talking with Your Health Care Team</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/social'">Social Support</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/stress'">Stress Management</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/physical'">Physical Activity</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/well-being/problem'">Problem Solving</a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/well-being'"> < BACK TO Enhancing Well-Being</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

@@ -1,0 +1,80 @@
+<div class="container mr-150">
+	<nav aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Dashboard</a></li>
+	    <li class="breadcrumb-item"><a [routerLink]="'/patient-resources'">Patient Resources</a></li>
+	    <li class="breadcrumb-item active mob-hidden" aria-current="page">Diet & Nutrition</li>
+	  </ol>
+	</nav> 
+	<div class="top-content pd-top-22 clearfix">
+		<div class="row">
+			<div class="col-md-4 border-right">
+			   	<h2 class="bold-text center-text">Diet & Nutrition</h2>
+			</div>
+			<div class="border"></div>
+			<div class="col-md-8">
+				<p class="top-head-2">Healthy eating is particularly important because it can improve your quality of life, and it may help prevent the return of cancer. For people in treatment, the treatment side effects, changes in diet, and lack of physical activity are some of the reasons why many cancer patients experience unplanned weight loss or gain during treatment. In this section, you'll learn how to address some concerns related to diet and nutrition and improve your quality of life through healthy eating.</p>
+			</div>
+		</div>	
+	</div>
+	<div class="content-grid clearfix row ">
+		<div class="col-md-4" *ngFor="let cardsrc of card1">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content><span (click)= "saveFavorite(cardsrc.label)" class="icon-my-favorites"></span>
+			  	<h4 class="card-title font-20">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route,cardsrc.route2,cardsrc.route3]"><i class="material-icons">arrow_forward </i>Read More</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+    
+    <div class="content-grid clearfix row ">
+		<div class="col-md-4" *ngFor="let cardsrc of card2">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content><span (click)= "saveFavorite(cardsrc.label)" class="icon-my-favorites"></span>
+			  	<h4 class="card-title font-20">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route,cardsrc.route2,cardsrc.route3]"><i class="material-icons">arrow_forward </i>Read More</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div> 
+	</div>
+ <!--   
+    <div class="content-grid clearfix row ">
+		<div class="col-md-4" *ngFor="let cardsrc of card3">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content><span (click)= "saveFavorite(cardsrc.label)" class="icon-my-favorites"></span>
+			  	<h4 class="card-title font-20">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route,cardsrc.route2,cardsrc.route3]"><i class="material-icons">arrow_forward </i>Read More</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>    
+	</div>
+ -->   
+</div>

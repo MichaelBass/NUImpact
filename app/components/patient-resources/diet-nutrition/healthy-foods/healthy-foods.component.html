@@ -1,0 +1,77 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+            <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+            <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
+            <li class="breadcrumb-item"><a href="#/patient-resources/diet-nutrition">Diet & Nutrition</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Healthy Foods</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Healthy-foods</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+
+                    <p class="detail-pera pt-pb">Here is a list of healthy foods that you should try to incorporate in your diet, but before making any changes to your diet talk to your doctor first.</p>
+                    <img src="assets/img/foods.jpg" width="100%" /><br><br>
+                    <p class="bold-text">Vegetables and Fruits</p><br>
+                    <p class="font-14">Fruits and vegetables are:</p>
+                    <ul class="left-side font-14 mt-20">
+                        <li>Low in calories,</li>
+                        <li>High in fiber (they fill you up), and</li>
+                        <li>Can be helpful in preventing certain cancer.</li>
+                    </ul>
+                    <p class="detail-pera pt-pb">We need to consume a variety of fruits and vegetables in order to get the nutritional balance our bodies need. Below is a list of variety of fruits and vegetables to incorporate into your meals or eat as a snack.</p>
+
+                    <ul class="left-side font-14">
+                        <li>Green: Collard greens, spinach, broccoli, green peas, kiwi</li>
+                        <li>Yellow/Orange:  Carrots, sweet potatoes, yellow peppers, butternut squash, bananas, oranges, lemons</li>
+                        <li>Red:  Red cabbage, beets, red onion, kidney beans, radishes, cranberries, raspberries, strawberries</li>
+                        <li>Blue/Purple:  Eggplant, blueberries, blackberries, grapes, plums</li>
+                        <li>White:  Garlic, onion, leeks, scallion, chives</li>
+                    </ul>
+                    <p class="mt-20">Experts recommend the daily consumption of 2 to 6.5 cups of fruits and vegetables, depending on one's energy needs. This includes 1 to 2.5 cups of fruits and 1 to 4 cups of vegetables, with special emphasis on dark green and orange vegetables and legumes.</p>
+                    <p class="semibold-text pt-pb">Whole Grains</p>
+                    <p>The outer layer of a grain is rich in fiber, vitamins, and minerals. Whole grain products retain this layer while other processed grains don't.</p>
+                    <p class="pt-pb">If you choose whole-grain products, make sure the word “whole” is on the label. If the ingredient list on a wheat bread lists only "wheat" and not "whole wheat," it's not a whole-grain product.<br><br>There are many other grains for example:</p>
+                    <ul class="left-side">
+                        <li>Oats: Easily digested, oats provide B vitamins. Oatmeal and oat bran are excellent for lowering cholesterol.</li>
+                        <li>Quinoa: A high quality protein. Quinoa is also high in iron.</li>
+                        <li>Rice: Choose brown or wild rice over enriched white rice whenever you can.</li>
+                        <li>Wheat: Whole-wheat bread and pasta are widely available. Bulgur wheat is a form of cracked wheat. Wheat germ, although only a part of the whole grain, is an excellent source of vitamin E.</li>
+                    </ul>
+                    
+                    <p class="semibold-text ">Legumes</p>
+                    <p class="font-14 mt-20">Legumes are an important source of protein and fiber. Legumes are a broad category of foods that includes:</p>
+                    <ul class="left-side font-14 mt-20">
+                        <li>Beans (red beans, kidney beans).</li>
+                        <li>Lentils</li>
+                        <li>Split peas</li>
+                        <li>Garbanzo beans, etc.</li>
+                    </ul>    
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">All Diet & Nutrition Resources</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li class="active" ><a [routerLink]="'/patient-resources/diet-nutrition/healthy-foods'">Healthy Foods</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-gain'">Managing Weight Gain</a></li> 
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-loss'">Managing Weight Loss</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/loss-of-appetite'">Dealing with a Loss of Appetite</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/nutrition-tips'">Nutrition </a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition'"> < BACK TO PATIENT RESOURCES </a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

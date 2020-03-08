@@ -1,0 +1,55 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Financial Resources</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Managing Transportation and Other Concerns</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Managing Transportation and Other Concerns</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+
+                    <p class="detail-pera pt-pb">Cancer treatment is time-consuming, requires frequent trips to the treatment center. Help is available.</p>
+                    <p class="bold-text">Transportation Resources</p>
+                    <p>Many organizations offer assistance with transportation to and from medical appointments and related costs:</p>
+                    <ul class="left-side font-14 mt-30">
+                        <li><a (click)="logWebsite('https://www.cancer.org')" href='https://www.cancer.org' target='_blank'>American Cancer Society (ACS)</a> (800-227-2345) provides vouchers for appointment-related rides on Chicago Transit Authority (CTA) buses and trains and on PACE suburban buses and paratransit services. The American Cancer Society also offers the Road to Recovery program, which matches volunteer drivers with individuals in need of rides to cancer treatment-related appointments.</li>  
+                        <li><a (click)="logWebsite('https://www.cancercare.org')" href='https://www.cancercare.org' target='_blank'>CancerCare</a> (800-813-4673) offers individuals with cancer grants to offset the cost of parking or other treatment-related transportation costs.</li>      
+                        <li><a (click)="logWebsite('https://www.pacebus.com/sub/paratransit/default.asp')" href='https://www.pacebus.com/sub/paratransit/default.asp' target='_blank'>PACE Paratransit</a> (312-663-4357) is a service that enables enrolled seniors and individuals with disabilities to pre-arrange rides for medical appointments. If you are currently receiving cancer treatment, you can request an expedited application review. The cost of PACE rides may be covered by vouchers offered by the American Cancer Society.</li>
+                        <li><a (click)="logWebsite('https://www.pacebus.com/sub/paratransit/TAP.asp')" href='https://www.pacebus.com/sub/paratransit/TAP.asp' target='_blank'>City of Chicago Taxi Access Program</a> allows eligible patients to take a treatment-related taxi cab ride (up to $30.00 value) for the cost of $3.00. This program is limited to Chicago residents, and individuals can take up to 8 one way rides per day.</li>
+                    </ul>                    
+                    <p class="bold-text">Meals & Lodging</p>
+                    <ul class="left-side font-14 mt-30">
+                        <li><a (click)="logWebsite('https://culinarycare.org')" href='https://culinarycare.org' target='_blank'>Culinary Care</a> (847-781-095) provides meal delivery service for individuals fighting cancer.</li> 
+                        <li><a (click)="logWebsite('https://www.joeshouse.org')" href='https://www.joeshouse.org' target='_blank'>Joe's House</a> (877-563-7468) is a nonprofit organization providing a nationwide online service that helps people with cancer and their families find a place to stay when traveling away from home for medical treatment</li>
+                        <li><a (click)="logWebsite('https://www.nm.org/locations/northwestern-memorial-hospital#local-serviceshttps://www.nm.org/locations/northwestern-memorial-hospital')" href='https://www.nm.org/locations/northwestern-memorial-hospital#local-serviceshttps://www.nm.org/locations/northwestern-memorial-hospital' target='_blank'>Northwestern Memorial Hospital Local Hotel and Resource Guide</a> - A comprehensive guide to discounts at local hotels as well as transportation and parking information.</li>  
+                        <li><a (click)="logWebsite('https://www.cancersupportcommunity.org/airbnb')" href='https://www.cancersupportcommunity.org/airbnb' target='_blank'>Cancer Support Community</a> (877-793-0498) has received grant funding to offset the cost of staying at local Airbnb’s for patient’s coming from 50 miles away for cancer treatment.</li>
+                    </ul>
+                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Financial Resources</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li><a [routerLink]="'/patient-resources/financial/cost'">Managing the Cost of Treatment</a></li>
+                        <li><a [routerLink]="'/patient-resources/financial/legal'">Legal and Workplace Issues</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/financial/transportation'">Managing Transportation and Other Concerns</a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/financial'"> < BACK TO Financial Resources</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+            <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+            <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
+            <li class="breadcrumb-item"><a href="#/patient-resources/diet-nutrition">Diet & Nutrition</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Maintaining a Balanced Diet</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Dealing with Loss of Appetite</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+
+                    <p class="detail-pera pt-pb">You may lose your appetite because you’re experiencing nauseas or have mouth/throat problems that make it difficult or painful to eat or swallow. Also, some drugs can cause you to lose your taste for food or make some foods taste differently. Here you'll learn how to address your loss of appetite.</p>
+                    <p>Even if you don’t have an appetite, it's important that you eat well—such as eating and drinking foods that have plenty of protein, nutrients, and calories. </p>
+                    <p>Here are some helpful strategies for eating well: </p>
+<!--                    <p class="semibold-text">Below are examples of these types of food </p>-->
+                    <ul class="left-side font-14 mt-30">
+                        <li>Eat 5 or 6 small meals or snacks a day, instead of 3 big meals. </li>
+                        <li>Choose foods/drinks that are high in calories and protein. </li>
+                        <li>If you don’t feel like eating solid foods, drink milkshakes, smoothies, juice, or soup.</li>
+                        <li>Set a daily schedule for eating. </li>
+                        <li>Some types of chemotherapy give you a metal taste in your mouth. If this happens, use plastic forks and spoons to decrease the metal taste.</li>
+                    </ul>
+                    
+                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">All Diet & Nutrition Resources</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-foods'">Healthy Foods</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-gain'">Managing Weight Gain</a></li> 
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-loss'">Managing Weight Loss</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/diet-nutrition/loss-of-appetite'">Dealing with a Loss of Appetite</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/nutrition-tips'">Nutrition </a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition'"> < BACK TO PATIENT RESOURCES </a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

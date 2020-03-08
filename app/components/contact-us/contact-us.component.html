@@ -1,0 +1,76 @@
+<div class="container mr-150">
+	<nav aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Dashboard</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+	  </ol>
+	</nav>
+	<div class="top-content pd-top-22 clearfix">
+		<div class="row">
+			<div class="col-md-3 border-right">
+			   	<h2 class="semibold-text center-text">Contact us</h2>
+			</div>
+			<div class="border"></div>
+			<div class="col-md-8">
+				<p class="top-head-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
+			</div>
+		</div>	
+	</div>
+	<div class="contact row">
+		<div class="col-md-6">
+			<div class="contact-details">
+                <h3>Feedback & Suggestions</h3>
+			<p>
+				If you want to let us know that you’re enjoying our app or have any suggestions on how we can improve it, please feel free to use the contact form below.
+			</p>
+			<form [formGroup]="sendComment" (submit)="submit()" autocomplete="off" class="contact-form">
+				<div class="row">
+					<div class="form-group col-md-6">
+					    <label for="inputsm">Full Name</label>
+					    <input class="form-control" id="inputsm" type="text" placeholder="Your name" formControlName="fullName">
+					    <p class="error" *ngIf="sendComment.controls['fullName'].hasError('required') && sendComment.controls['fullName'].touched">Full name is required.</p>
+                    	<p class="error" *ngIf="sendComment.controls['fullName'].hasError('pattern') && sendComment.controls['fullName'].touched">Please enter valid Full name.</p>
+				  	</div>
+				  	<div class="form-group col-md-6">
+					    <label for="inputsm">Email</label>
+					    <input class="form-control" id="inputsm" type="email" placeholder="Email" formControlName="email">
+					    <p class="error" *ngIf="sendComment.controls['email'].hasError('required') && sendComment.controls['email'].touched">Email is required.</p>
+                    	<p class="error" *ngIf="sendComment.controls['email'].hasError('pattern') && sendComment.controls['email'].touched">Please enter valid Email.</p>
+				  	</div>
+				</div>				
+			  	<div class="form-group">
+				    <label for="inputsm">Message</label>
+				    <textarea row="20" class="form-control" placeholder="Message here" formControlName="message"></textarea>
+				    <p class="error" *ngIf="sendComment.controls['message'].hasError('required') && sendComment.controls['message'].touched">Message is required.</p>
+                    <p class="error" *ngIf="sendComment.controls['message'].hasError('pattern') && sendComment.controls['message'].touched">Please enter valid Message.</p>
+			  	</div>
+			  	<div class="contact-submit">
+			  		<button class="btn-primary pull-right">submit</button>
+			  	</div>
+			</form>
+            </div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-5 contact-info">
+			<div class="email row contact-dispaly">
+				<div class="col-md-4 icon">
+					<i class="icon-mail"></i>
+				</div> 
+				<div class="col-md-8 pt-25">
+					<h4>Email address:</h4>
+					<p>info@mynmcc.com</p>
+				</div> 
+			</div>
+			<div class="telephone row contact-dispaly">
+				<div class="col-md-4 icon">
+					<i class="icon-telephone"></i>
+				</div> 
+				<div class="col-md-8 pt-25">
+					<h4>Telephone Number:</h4>
+					<p>(012)-345-6789</p>
+				</div> 
+			</div>
+		</div>
+		
+	</div>
+</div>

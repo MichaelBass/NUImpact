@@ -1,0 +1,12 @@
+mat-card-content div span{
+    font-weight: bold;
+}
+.icon-like:before {
+    color: #00B4CC;
+    display: inline-block;
+    float: right;
+    font-size: 22px;
+}
+.fav-item:nth-child(3n+1){
+    clear:both;
+}

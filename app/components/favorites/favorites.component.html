@@ -1,0 +1,41 @@
+<div class="container mr-150">
+	<nav aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">My Favorites</li>
+	  </ol>
+	</nav>
+	<div class="top-content pd-top-22 clearfix">
+		<div class="row">
+			<div class="col-md-3 border-right">
+			   	<h2 class="bold-text center-text">My Favorites</h2>
+			</div>
+			<div class="border"></div>
+			<div class="col-md-8">
+				<p class="top-head-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+					tempor invidunt ut labore.</p>
+			</div>
+		</div>	
+	</div>
+	<div class="content-grid row">
+		<div class="col-md-4 fav-item" *ngFor="let cardsrc of card">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content><span class="icon-like" (click)="deleteFavorite(cardsrc.label)"></span>
+			  	<h4 class="card-title font-20">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route,cardsrc.route2,cardsrc.route3]"><i class="material-icons">arrow_forward </i>Read More</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+
+    
+</div>

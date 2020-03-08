@@ -1,0 +1,47 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/community">Support Services & Resources</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">One on One Support from Cancer Survivors</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>One on One Support from Cancer Survivors</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+
+                    <p class="detail-pera pt-pb">Sometimes it just helps to talk with someone else who has had cancer. At such times, one-on-one support is available from a cancer survivor who has received treatment for the same type of cancer.</p>
+                    <p>These local and national non-profit organizations can connect you with a survivor whose experience is similar to yours.</p>
+                    <ul class="left-side font-14 mt-30">
+                        <li><a (click)="logWebsite('https://www.cancerhopenetwork.org')" href='https://www.cancerhopenetwork.org' target='_blank'>Cancer Hope Network</a></li>
+                        <li><a (click)="logWebsite('https://imermanangels.org')" href='https://imermanangels.org' target='_blank'>Imerman Angels*</a></li>
+                    </ul>
+                    *Services offered in English and Spanish
+                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Support Services & Resources</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li><a [routerLink]="'/patient-resources/community/local'">Local Support Groups & Communities</a></li>
+                        <li><a [routerLink]="'/patient-resources/community/online'">Support Online and by Phone</a></li>
+                        <li><a [routerLink]="'/patient-resources/community/oncology'">Supportive Oncology at Northwestern Medicines</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/community/survivors'">One on One Support from Cancer Survivors</a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/community'"> < BACK TO Support Services & Resources </a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

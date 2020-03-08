@@ -1,0 +1,65 @@
+<mat-toolbar class="example-toolbar primary">
+    <mat-toolbar-row class="primary">
+        <img src="assets/img/logo.png" alt="">
+        <mat-sidenav-container class="example-container primary">
+            <mat-sidenav #sidenav mode="side" class="example-sidenav primary" fixedInViewport="true" fixedTopGap="0"
+                fixedBottomGap="0" position="end">
+
+                <mat-toolbar class="primary">
+                    <mat-toolbar-row class="m-r-9">
+                    <!--
+                        <img src="assets/img/profile.png" width="17%">
+                        <span class="profile-name">Betina</span>
+
+                        <span class="example-spacer"></span>
+                    --> 
+                        <button mat-icon-button (click)="sidenav.toggle()">
+                            <span class="icon-close"></span>
+                        </button>
+                    </mat-toolbar-row>
+                </mat-toolbar>
+                <!--<hr>-->
+                <mat-nav-list>
+                    <div class="sidebar-nav-list">
+                        <a mat-list-item (click)="navigate('/dashboard',sidenav);"><span class="icon-dashboard"></span>
+                            PRO Dashboard
+                        </a>
+                        <a mat-list-item (click)="navigate('/symptom-library',sidenav);"><span
+                                class="icon-symptom-library"></span> Symptom Library </a>
+                        <a mat-list-item (click)="navigate('/patient-resources',sidenav);"><span
+                                class="icon-patient-resources"></span> Patient Resources
+                        </a>
+                        <a mat-list-item (click)="navigate('/my-favorites',sidenav);"><span
+                                class="icon-my-favorites"></span>
+                            My Favourites </a>
+                         <!--   
+                        <a mat-list-item (click)="navigate('/accounts',sidenav);"><span class="icon-my-account"></span>
+                            My
+                            Account </a>
+                        -->    
+                    </div>
+                </mat-nav-list>
+                <hr>
+                <mat-nav-list>
+                    <div class="sidebar-nav-list">
+                        <a mat-list-item (click)="navigate('/about',sidenav);"> About MyNM Cancer Care
+                        </a>
+                        <a mat-list-item (click)="navigate('',sidenav);"> Watch Introduction Video </a>
+                        <a mat-list-item (click)="navigate('/contact-us',sidenav);"> Contact Us
+                        </a>
+                        <a mat-list-item (click)="navigate('',sidenav);"> Disclaimer </a>
+                    </div>
+                </mat-nav-list>
+            </mat-sidenav>
+        </mat-sidenav-container>
+        
+        <span class="example-spacer"></span>
+        <!--
+        <mat-slide-toggle #langSlide class="example-margin" [checked]="!0" [disabled]="!1"
+            (change)="changeLang($event)">{{selectedLang}}</mat-slide-toggle>
+        -->
+        <button mat-icon-button (click)="sidenav.toggle()" class="example-menu-margin">
+            <span class="icon-bars"></span>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>

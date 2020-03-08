@@ -1,0 +1,305 @@
+<div class="container mr-150">
+	<nav aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">Symptom Library</li>
+	  </ol>
+	</nav>
+	<div class="top-content pd-top-22 clearfix">
+		<div class="row">
+			<div class="col-md-3 border-right">
+			   	<h3 class="symptom-heading">Symptom Library</h3>
+			</div>
+			<div class="border"></div>
+			<div class="col-md-8">
+				<p class="top-head-2 hidden-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+					tempor invidunt ut labore.</p>
+			</div>
+		</div>	
+	</div>
+
+
+	<div class="content-grid pt-40 clearfix row">
+		<div class="col-md-3" *ngFor="let cardsrc of card1">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route]" ><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+
+	<div class="content-grid pt-40 clearfix row">
+		<div class="col-md-3" *ngFor="let cardsrc of card2">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route]" ><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+
+	<div class="content-grid pt-40 clearfix row">
+		<div class="col-md-3" *ngFor="let cardsrc of card3">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route]" ><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+
+
+<!--	
+	<div class="content-grid pt-40 clearfix row">
+		<div class="col-md-3">
+			<mat-card >
+			  <img mat-card-image src="assets/img/pain.png" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">Pain</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="'/symptom-library-topic'"><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+        
+        <div class="col-md-3">
+			<mat-card >
+			  <img mat-card-image src="assets/img/fatigue.png" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">Fatigue</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="'/symptom-library-topic'"><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+        
+        <div class="col-md-3">
+			<mat-card >
+			  <img mat-card-image src="assets/img/depression.png" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">Depression</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="'/symptom-library-topic'"><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+        
+        <div class="col-md-3">
+			<mat-card >
+			  <img mat-card-image src="assets/img/anxiety.png" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">Anxiety</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="'/symptom-library-topic'"><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+    
+    <div class="content-grid pt-40 clearfix row">
+		<div class="col-md-3">
+			<mat-card >
+			  <img mat-card-image src="assets/img/insomnia.png" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">Insomnia</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="'/symptom-library-topic'"><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+        
+        <div class="col-md-3">
+			<mat-card >
+			  <img mat-card-image src="assets/img/physical.png" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">Physical Function</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="'/symptom-library-topic'"><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+        
+        <div class="col-md-3">
+			<mat-card >
+			  <img mat-card-image src="assets/img/nausea.png" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">Nausea</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="'/symptom-library-topic'"><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+        
+        <div class="col-md-3">
+			<mat-card >
+			  <img mat-card-image src="assets/img/vomiting.png" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">Vomiting</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="'/symptom-library-topic'"><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+  
+    <div class="content-grid pt-40 clearfix row">
+		<div class="col-md-3">
+			<mat-card >
+			  <img mat-card-image src="assets/img/shortness.png" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">Shortness of Breath</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="'/symptom-library-topic'"><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+        
+        <div class="col-md-3">
+			<mat-card >
+			  <img mat-card-image src="assets/img/constipation.png" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">Constipation</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="'/symptom-library-topic'"><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+        
+        <div class="col-md-3">
+			<mat-card >
+			  <img mat-card-image src="assets/img/diarrhea.png" alt="Photo of a Shiba Inu">
+			  <mat-card-content>
+			  	<h4 class="card-title">Diarrhea</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="'/symptom-library-topic'"><i class="material-icons">arrow_forward </i>READ about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+      
+	</div>
+ -->   
+	<div class="all-symptoms bg-white">
+		<ul>
+			<p>All-symptoms</p>
+			<li><a href="#">Pain</a></li>
+			<li class="active"><a href="#">Fatigue</a></li>
+			<li><a href="#">Depression</a></li>
+			<li><a href="#">Anxiety</a></li>
+			<li><a href="#">Insomnia</a></li>
+			<li><a href="#">Physical Function</a></li>
+			<li><a href="#">Nausea</a></li>
+			<li><a href="#">Vomiting</a></li>
+			<li><a href="#">Shortness of Breath</a></li>
+			<li><a href="#">Constipation</a></li>
+			<li><a href="#">Diarrhea</a></li>
+		</ul>
+	</div>
+</div>

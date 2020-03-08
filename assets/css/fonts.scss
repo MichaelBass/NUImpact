@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'pwa';
+  src:  url('../fonts/pwa.eot?tlf4lp');
+  src:  url('../fonts/pwa.eot?tlf4lp#iefix') format('embedded-opentype'),
+    url('../fonts/pwa.ttf?tlf4lp') format('truetype'),
+    url('../fonts/pwa.woff?tlf4lp') format('woff'),
+    url('../fonts/pwa.svg?tlf4lp#pwa') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pwa' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-my-account:before {
+  content: "\e910";
+  color: #000;
+}
+.icon-pdf:before {
+  content: "\e90e";
+  color: #000;
+}
+.icon-f-arrow:before {
+  content: "\e900";
+  color: #000;
+}
+.icon-contact-us:before {
+  content: "\e901";
+  color: #000;
+}
+.icon-dashboard:before {
+  content: "\e902";
+  color: #000;
+}
+.icon-document:before {
+  content: "\e903";
+  color: #000;
+}
+.icon-like:before {
+  content: "\e904";
+  color: #000;
+}
+.icon-mail:before {
+  content: "\e905";
+}
+.icon-minus:before {
+  content: "\e906";
+  color: #000;
+}
+.icon-my-favorites:before {
+  content: "\e907";
+  color: #000;
+}
+.icon-patient-resources:before {
+  content: "\e909";
+  color: #000;
+}
+.icon-plus:before {
+  content: "\e90a";
+  color: #000;
+}
+.icon-symptom-library:before {
+  content: "\e90b";
+  color: #000;
+}
+.icon-telephone:before {
+  content: "\e90c";
+}
+.icon-video:before {
+  content: "\e90d";
+  color: #000;
+}
+.icon-close:before {
+  content: "\e908";
+}
+.icon-bars:before {
+  content: "\e90f";
+}
+

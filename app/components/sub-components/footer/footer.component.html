@@ -1,0 +1,15 @@
+<nav mat-tab-nav-bar mat-align-tabs="center" class="br-top">
+	<div class="container">
+		 <div class="footer">
+			<ul>
+				<li>
+					<a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive
+						#rla="routerLinkActive" [active]="rla.isActive" >
+						<span [class]="link.icon"></span>
+						{{link.label}}
+					</a>
+				</li>
+			</ul> 
+		</div>
+	</div>	
+</nav> 

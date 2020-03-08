@@ -1,0 +1,58 @@
+.example-is-mobile .example-sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+    flex: 0 0 auto;
+}
+
+.example-container {
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    right: 0;
+    overflow: visible;
+}
+
+.example-margin {
+    margin-right: 30px;
+	margin-top: -19px;
+	position: relative;
+}
+
+.example-menu-margin {
+    margin-right: 10px;
+    margin-top: -19px;
+}
+
+.example-sidenav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.mat-toolbar {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    padding: 11px 17px 1px;
+}
+
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-sidenav-container {
+    z-index: 9999;
+}
+
+.m-r-9 {
+    margin-right: 9px;
+    margin-top: -7px;
+}

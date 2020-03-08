@@ -1,0 +1,20 @@
+.resourace-topic{
+	display: block;
+    width: 100%;
+    text-align: right;
+}
+.resourace-topic span {
+	display: inline-block;
+    float: left;
+    margin: 0;
+}
+.resourace-topic i {
+	display: inline-block;
+    margin-top: 8px;
+}    
+
+@media (max-width: 540px) {
+    .top-head-2 {
+        padding-top: 0;
+    }
+}

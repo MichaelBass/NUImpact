@@ -1,0 +1,24 @@
+.d-none {
+    display: block;
+}
+.mob-none {
+    display: none;
+}
+.active a {
+    color: #333;
+}
+.active a:hover {
+    color: #333;
+}
+@media screen and (max-width: 540px) {
+   
+    .pl-pr-0 {
+        padding: 0; 
+    }
+    .d-none {
+        display: none;
+    }
+    .mob-none {
+        display: block;
+    }
+}   

@@ -1,0 +1,43 @@
+<div class="disclaimer" *ngIf="isWarn">
+	<div class="container-fluid">
+		<div class="container"> 
+			<p>
+			My NM Care Corner it is not intended to replace clinical care or management by a healthcare provider. If you have a medical emergency, please contact your healthcare provider.
+			</p>
+		</div>
+		<span>
+			<a style="" href="javascript:void(0)" (click)="dismiss()">Dismiss </a>
+			<i class="icon-close" (click)="dismiss()"></i>
+		</span>
+	</div>	
+</div>
+<div class="container mr-150">
+	<div class="top-content clearfix">
+		<div class="row">
+			<div class="col-md-4 border-right">
+				<img src="assets/img/my-dash.png" class="profile-dashboard">
+			   	<h2>My Dashboard</h2>
+			</div>
+			<div class="col-md-7">
+				<p class="top-head">{{title}}</p>
+			</div>
+		</div>	
+	</div>
+	<div class="content-grid clearfix row">
+		<div class="col-md-3" *ngFor="let cardsrc of card">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu" width="100%">
+			  <mat-card-content>
+			  	<h4 class="card-title">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route]" ><i class="material-icons">arrow_forward </i>Read about symptom</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+	<div class="text-center view-more">
+		<button mat-stroked-button (click)="displayAll()">View more</button>
+	</div>
+</div>

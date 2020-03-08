@@ -1,0 +1,43 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/treatment">Treatment Symptom Management</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Palliative Care</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Palliative Care</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+
+                    <p class="detail-pera pt-pb">Palliative care aims to provide relief from pain and discomfort—whether physical, emotional, or spiritual. The goal of palliative care is to enhance your quality of life as you manage cancer. Palliative care teams include physicians, nurse practitioners, nurses, and social workers.</p>
+                    <p class="detail-pera pt-pb">When people hear the term palliative care, many assume palliative care is the same as hospice. Although palliative care is also frequently involved in care at the end of life, it begins at any stage to help you live as well as possible with cancer. Palliative care is appropriate from the time a patient receives a diagnosis and can be delivered alongside treatments that are meant to cure or manage cancer (e.g., chemotherapy and radiation). The goals of palliative care are to manage symptoms like pain, fatigue, and anxiety and to help you cope with day-to-day challenges.</p>  
+                    <p>Additional information about Northwestern Medicine Palliative Care services is <a (click)="logWebsite('https://www.nm.org/conditions-and-care-areas/palliative-medicine-and-supportive-care')" href="https://www.nm.org/conditions-and-care-areas/palliative-medicine-and-supportive-care" target="_blank">available here</a>. To request a referral, speak with a member of your cancer care team.</p>
+                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li><a [routerLink]="'/patient-resources/treatment/integrative'">Integrative Medicine</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/treatment/palliative'">Palliative Care</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment/rehabilitation'">Cancer Rehabilitation Services</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment/survivorship'">Cancer Survivorship Services</a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/treatment'"> < BACK TO Treatment Symptom Management</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

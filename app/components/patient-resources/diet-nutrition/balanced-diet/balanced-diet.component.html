@@ -1,0 +1,95 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/diet-nutrition">Diet & Nutrition</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Maintaining a Balanced Diet</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Maintaining a Balanced Diet</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+
+                    <p class="detail-pera pt-pb">Eating a well-balanced diet can help you feel better and maintain a healthy weight. Here are tips on how to maintain a balanced diet. </p>
+                    <img src="assets/img/balanced-diet.jpg" width="100%" /><br><br>
+                    <p class="semibold-text">Portion Control</p><br>
+                    <p>Much of the problem of overweight and obesity in this country is due to portion sizes that are too big! It is important to watch your weight because obesity is linked to heart disease, diabetes, stroke, and some cancers.</p>
+                    <br>
+                    <ul class="left-side font-14 mt-20">
+                        <li>Meats, Fish, and Poultry = deck of cards or upper side of hand when clenched in fist..</li>
+                        <li>Fats (butter, salad dressings, sour cream, etc.) = 1 tablespoon</li>
+                        <li>Bread = 1 slice</li>
+                        <li>Pasta = 1 ounce or ½ cup cooked.</li>
+                        <li>Cereal = 3/4 to 1 cup</li>
+                    </ul>
+
+                    <p class="semibold-text mt-20">Food Labels</p>
+                    <p class="font-14 pt-pb">Food labels are your guide on the road to healthy eating.</p>
+                    <p class="semibold-text">Labels can:</p>
+                    <ul class="left-side font-14 mt-20">
+                        <li>Help you figure out how many nutrients you are getting in your daily diet</li>
+                        <li>Help you compare the nutrients in specific products so you can make the choices that are best for you.</li>
+                    </ul>
+
+                    <p class="font-14 mt-20">Things to pay attention to on food label:</p>
+                    <ul class="left-side font-14 mt-20">
+                        <li>Serving Size:</li>
+                            <p class="font-14 mb-10">This tells you how big a serving is. Is it 1 cup?  Is it 3 crackers?  Is it 2 oz.?</p>
+                        <li>Servings Per Container:</li>
+                            <p class="mb-10">This mean how many servings are in each package. So, if there are two servings and you eat the whole package, you must multiply the calories, fat, etc. by 2 to see how many calories,fat, etc. you have eaten!</p>
+                        <li>Calories:</li>
+                            <p class="mb-10">This is how many calories there are in each serving.A calorie is a unit of energy—or what we consume every day through eating and drinking.Calories are important because eating too many calories leads to weight gain.</p>
+                    </ul>
+
+                    <p class="font-14 pt-pb">The amount of calories you need each day depends on many factors like your</p>
+                    <ul class="left-side font-14">
+                        <li>Risk of cancer</li>
+                        <li>Heart disease</li>
+                        <li>Diabetes</li>
+                        <li>Stroke</li>
+                    </ul>
+
+                    <p class="font-14 pt-pb">Weight gain may lead to increased:</p>
+                    <ul class="left-side font-14">
+                        <li>Height</li>
+                        <li>Weight</li>
+                        <li>Gender</li>
+                        <li>Current activity level. </li>
+                    </ul>
+
+                    <p class="font-14 pt-pb">We recommend that you talk to your doctor about a daily recommended calorie intake to lose, maintain, or gain weight. </p>
+                    <ul class="left-side font-14"> 
+                        <li>Total Fat:</li>
+                            <p class="mb-10">This is how many grams of fat there are for each serving (not in the whole package). You want no more than 3 grams of fat for every 100 calories. </p>
+                        <li>Sodium:</li>
+                            <p class="mb-10">Doesn’t matter too much for weight loss, but for hypertension, it does.Daily maximum – 2,400 mg</p>
+                    </ul>
+
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">All Diet & Nutrition Resources</p> 
+                    <ul class="right-side-list mt-20">  
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-foods'">Healthy Foods</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-gain'">Managing Weight Gain</a></li> 
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-loss'">Managing Weight Loss</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/loss-of-appetite'">Dealing with a Loss of Appetite</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/nutrition-tips'">Nutrition </a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition'"> < BACK TO PATIENT RESOURCES </a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

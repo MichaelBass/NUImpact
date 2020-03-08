@@ -1,0 +1,57 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+            <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+            <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
+            <li class="breadcrumb-item"><a href="#/patient-resources/diet-nutrition">Diet & Nutrition</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Managing Weight Loss</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Managing Weight Loss</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+
+                    <p class="detail-pera pt-pb">The goal to managing weight loss is to increase your calorie consumption with nutrient-packed foods to gain weight back gradually.</p>
+                    <p class="semibold-text">Below are examples of the types of food you can eat to help gain weight:</p>
+                    <ul class="left-side font-14 mt-20">
+                        <li>Dried fruits (raisins, dried apricots, dried cranberries)</li>
+                        <li>Nuts, seeds, and nut butters</li>
+                        <li>Fruit dipped in peanut butter.</li>
+                        <li>Whole-grain crackers with cheese.</li>
+                        <li>Healthy oils (such as olive or canola) to stir-fry or sauté foods instead of steaming or baking without fat.</li>
+                    </ul>
+                    
+                    <p class="bold-text mt-20">Other Tips to Gain Weight</p>
+                    <ul class="left-side font-14 mt-20">
+                        <li>Eat several mini-meals throughout the day.</li>
+                        <li>Drink your beverages between meals instead of during meals. This may leave more room for higher calorie foods at meals.</li>
+                        <li>Combine eating more with adding strength training into your routine. This will help ensure that you gain back muscle mass. </li>
+                    </ul>
+                       
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">All Diet & Nutrition Resources</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-foods'">Healthy Foods</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-gain'">Managing Weight Gain</a></li> 
+                        <li class="active" ><a [routerLink]="'/patient-resources/diet-nutrition/weight-loss'">Managing Weight Loss</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/loss-of-appetite'">Dealing with a Loss of Appetite</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/nutrition-tips'">Nutrition </a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition'"> < BACK TO PATIENT RESOURCES </a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

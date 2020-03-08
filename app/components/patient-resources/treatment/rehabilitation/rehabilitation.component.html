@@ -1,0 +1,49 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/treatment">Treatment Symptom Management</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Cancer Rehabilitation Services</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Cancer Rehabilitation Services</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+
+                    <p class="detail-pera pt-pb">Cancer rehabilitation services can be beneficial before, during, and after cancer treatment. Cancer rehabilitation services can help you if you feel weak, have pain and fatigue, lymphedema, or have difficulty keeping up with your activities of daily living, recreational activities, and work.</p>
+                    <p>Physical therapists, occupational therapists and speech language pathologists can work with you on strength and conditioning, self-care, swallowing and communication. The Northwestern Medical System provides cancer rehabilitation services in the following locations:</p>  
+                    <ul class="left-side font-14 mt-30">
+                        <li>NMH Rehabilitation Services</li>
+                        <li>NMG OB/GYN Pelvic Physical Therapy Program</li>
+                        <li>NMG Orthopedics Physical and Occupational Therapy</li>
+                        <li>Marianjoy Inpatient and Outpatient Services</li>
+                    </ul> 
+                    <p>Additionally, the <a (click)="logWebsite('https://www.sralab.org')" href='https://www.sralab.org' target='_blank'>Shirley Ryan Ability Lab</a> offers cancer rehabilitation services.</p>
+                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li><a [routerLink]="'/patient-resources/treatment/integrative'">Integrative Medicine</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment/palliative'">Palliative Care</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/treatment/rehabilitation'">Cancer Rehabilitation Services</a></li>
+                        <li><a [routerLink]="'/patient-resources/treatment/survivorship'">Cancer Survivorship Services</a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/treatment'"> < BACK TO Treatment Symptom Management</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

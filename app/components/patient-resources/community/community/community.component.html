@@ -1,0 +1,59 @@
+<div class="container mr-150">
+	<nav aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Dashboard</a></li>
+	    <li class="breadcrumb-item"><a [routerLink]="'/patient-resources'">Patient Resources</a></li>
+	    <li class="breadcrumb-item active mob-hidden" aria-current="page">Support Services & Resources</li>
+	  </ol>
+	</nav> 
+	<div class="top-content pd-top-22 clearfix">
+		<div class="row">
+			<div class="col-md-4 border-right">
+			   	<h2 class="bold-text center-text">Support Services & Resources</h2>
+			</div>
+			<div class="border"></div>
+			<div class="col-md-8">
+				<p class="top-head-2">A cancer diagnosis is a major life event. Making treatment decisions, managing work and finances, and coping with difficult emotions can be stressful and, at times, overwhelming. Fortunately, there is help available at your treatment center, in your community or, if you prefer, online and over the phone.</p>
+			</div>
+		</div>	
+	</div>
+	<div class="content-grid clearfix row ">
+		<div class="col-md-4" *ngFor="let cardsrc of card1">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content><span (click)= "saveFavorite(cardsrc.label)" class="icon-my-favorites"></span>
+			  	<h4 class="card-title font-20">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route,cardsrc.route2,cardsrc.route3]"><i class="material-icons">arrow_forward </i>Read More</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+    
+    <div class="content-grid clearfix row ">
+		<div class="col-md-4" *ngFor="let cardsrc of card2">
+			<mat-card >
+			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
+			  <mat-card-content><span (click)= "saveFavorite(cardsrc.label)" class="icon-my-favorites"></span>
+			  	<h4 class="card-title font-20">{{cardsrc.label}}</h4>
+			  </mat-card-content>
+			  <mat-card-content>
+				  <p class="card-details">
+				  	{{cardsrc.text}}
+				  </p>
+			   </mat-card-content> 
+			  <mat-divider></mat-divider>
+			  <mat-card-actions>
+			    <a [routerLink]="['/',cardsrc.route,cardsrc.route2,cardsrc.route3]"><i class="material-icons">arrow_forward </i>Read More</a>
+			  </mat-card-actions>
+			</mat-card>
+		</div> 
+	</div> 
+</div>

@@ -1,0 +1,17 @@
+<div class="home-overlay" *ngIf="isHidden">
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="video-overlay-container text-center">
+				<h4>Welcome to My NM Care Corner</h4>
+				<a class="close-icon"><img (click)="closeVideo()" src="assets/img/close.png" width="4%" alt="Close" /></a>
+				<img src="assets/img/overlay.jpg" width="100%" alt="not found">
+				<div class="clearfix bottom-menu">
+					<ul>
+						<li><a href="javascript:void(0)">Ver video en español</a></li>
+						<li><a (click)="skipVideo()">Skip this video</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

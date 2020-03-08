@@ -1,0 +1,89 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Dashboard</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Symptom Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Insomnia</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Insomnia</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">Sleeping well is important for your body and mind. A good night of sleep can help you think clearly, lower your blood pressure, help your appetite, and strengthen your immune system.</p>
+                    <p class="detail-pera">Insomnia is a common sleep disorder that can make it hard to fall asleep, hard to stay asleep, or cause you to wake up too early and not be able to get back to sleep.</p>
+                    <p class="detail-pera">Insomnia is common among cancer patients and survivors, but luckily, there're many ways you can improve your sleep.</p>
+                    <p class="semibold-text">Common causes of insomnia may include:</p>
+                    <ul class="left-side">
+                        <li>Physical changes caused by the cancer or surgery</li>
+                        <li>Side effects of drugs or other treatments</li>
+                        <li>Stress</li>
+                        <li>Health problems not related to cancer</li>
+                    </ul>
+                    <p class="semibold-text">Self-Care Strategies </p>
+                    <p>Here is a list of strategies to try at home to improve your sleep:</p>
+                    <ul class="left-side">
+                        <li>Go to sleep and wake up at the same time each day, even on the weekends. Your body will get used to the routine.</li>
+                        <li>Keep your bedroom dark, quiet, and away from distractions like pets and snoring individuals.</li>
+                        <li>Use the bedroom for sleep and sexual activity. All other activities (reading, watching TV, eating, talking, using the computer or smartphone, etc.) should be done in another room.</li>
+                        <li>Create a relaxing bedtime routine such as taking a bath, drinking a cup of herbal tea, or listening to relaxing music. Having the same relaxing routine each night will help your body wind down before bed.</li>
+                        <li>Try not to look at the clock to see the time when you’re having trouble falling asleep at the start of the night or when you wake up during the night.</li>
+                        <li>Increase your physical activity during the day.</li>
+                        <li>Naps can make it harder to fall asleep at night. If you really need a nap, keep it short (less than 30 minutes).</li>
+                        <li>Avoid spicy and heavy meals, caffeine, and alcohol before bedtime.</li>
+                        <li>Take melatonin, which is an over-the-counter medication that may help you sleep better at night.</li>
+                        <li><b>Relax.</b> Let your <a href='https://cancersymptoms.mayoclinic.org/wp-content/uploads/2019/10/mc4009.pdf' target="_blank">body and mind relax</a> for 20 to 30 minutes each day. Relaxation helps the body and mind react to stress. It also may help you fall asleep more easily. Meditation is a helpful form of relaxation and can improve your stress level.</li>
+                    </ul>
+                    <p class="semibold-text">How Your Care Team can Help</p> 
+                        <p>If you're not sleeping well, talk with your doctor. They may prescribe you medication or recommend a type of therapy that may improve your sleep.</p>
+                        <p class="semibold-text">Below are some strategies that your doctor may recommend </p>
+                        <ul class="left-side">
+                            <li>Cognitive Behavioral Therapy for Insomnia, or CBT-I. With CBT-I, you may be asked to meet with a psychologist or other trained provider to learn specific skills to help you sleep better. Research shows that CBT-I is very effective for helping people improve their sleep.</li>
+                            <li>Your doctor might recommend a prescription medicine to help you sleep better. Sleep medicines may be used for a short time. Make sure to only use sleep medicines that are prescribed or recommended by your doctor.</li>
+                        </ul>                       
+                        <p>To learn more about anxiety click on the links below:</p>
+                    
+                        <div class="col-md-9">
+                            <img src="assets/img/ico3.png" class="pull-left left-img" />
+                            <p class="semibold-text">Cancer Net Information on Insomnia</p>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn-secondary" (click)="displayWebsite('https://www.cancer.net/coping-with-cancer/physical-emotional-and-social-effects-cancer/managing-physical-side-effects/sleeping-problems-insomnia')">view website</button>
+                            <span class="border"></span>
+                        </div>
+                        <div class="col-md-9">
+                            <img src="assets/img/ico3.png" class="pull-left left-img" />
+                            <p class="semibold-text">Springboard Beyond Cancer Information on Insomnia</p>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn-secondary" (click)="displayWebsite('https://survivorship.cancer.gov/springboard/symptoms/sleep-problems')">view website</button>
+                            <span class="border"></span>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">All symptoms</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Pain</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatigue</a></li>
+                        <li><a href="#/symptom-library-depression">Depression</a></li>
+                        <li><a href="#/symptom-library-anxiety">Anxiety</a></li> 
+                        <li class="active"><a href="#/symptom-library-insomnia">Insomnia</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Physical Function</a></li>
+                        <li><a href="#/symptom-library-nausea">Nausea</a></li>
+                        <li><a href="#/symptom-library-vomiting">Vomiting</a></li>
+                        <li><a href="#/symptom-library-breath">Shortness of Breath</a></li>
+                        <li><a href="#/symptom-library-constipation">Constipation</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrhea</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

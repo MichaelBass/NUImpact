@@ -1,0 +1,17 @@
+.icon {
+	border-radius: 50%;
+    background: #fff;
+    width: 68px;
+    height: 68px;      
+    float: left;
+    margin: 10px 24px;
+    position: relative;
+}
+.form-group {
+	margin-bottom: 18px;
+}
+@media (max-width: 540px) {
+	.form-control {
+		font-size: 16px;
+	}
+}

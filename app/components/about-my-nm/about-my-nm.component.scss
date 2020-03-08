@@ -1,0 +1,13 @@
+.content-grid{ 
+	text-align: center;
+} 
+.border-right h2 {
+	margin-bottom: 58px;
+	line-height: 52px;
+	margin-top: 10px;
+} 
+@media (max-width: 540px) {
+	.border-right h2, .study-member h3 {
+		margin-bottom: 0;
+	} 
+}
