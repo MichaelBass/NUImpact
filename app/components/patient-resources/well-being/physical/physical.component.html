@@ -14,42 +14,41 @@
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
                         <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
-                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                        <a (click)= "logPDF('physical.pdf')" href="assets/pdf/physical.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Physical Activity</h2>
                     <span>Listen to the full audio of this page below</span>
                     <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
-
-                    <p class="detail-pera pt-pb">Regular exercise can reduce the chances of some cancers coming back. During treatment, such as chemotherapy and radiation, some people may feel fatigue and exercise can help combat fatigue. Going for a walk can be the best form of exercise during treatment. Regular exercise can also help you focus on other things besides your cancer. Moderate exercise such as going for a 30-minute walk several times a week can help lower stress, improve your health, and mood.</p>
-
-                    <p class="detail-pera pt-pb">If you're new to exercise, slowly increase the length and intensity of your exercise. Keep increasing the length of time of exercise up until you reach 30 minutes of moderate to vigorous activity a day. If you can't be active for an entire 30 minutes, try breaking those 30 minutes into two periods of 15 minutes or 3 periods of 10 minutes.</p>
-                    <p class="bold-text">What's Moderate vs. Vigorous Activity?</p>
-                    <p class="detail-pera pt-pb">Moderate activity is anything that makes you breathe as hard as you do during a brisk walk. During moderate activities, you'll notice a slight increase in heart rate and breathing, but you may not break a sweat.</p>
-                    <p class="detail-pera pt-pb">Vigorous activities generally engage large muscle groups and cause a noticeable increase in heart rate, breathing depth and frequency, and sweating.</p>
-                    <p class="detail-pera pt-pb">Moderate Activities Examples:</p>  
-                    <ul class="left-side font-14 mt-30">
+                    <br><br>
+                    <p class="detail-pera">Regular exercise can reduce the chances of some cancers coming back. During treatment, such as chemotherapy and radiation, some people may feel fatigue and exercise can help combat fatigue. Going for a walk can be the best form of exercise during treatment. Regular exercise can also help you focus on other things besides your cancer. Moderate exercise such as going for a 30-minute walk several times a week can help lower stress, improve your health, and mood.</p>
+                    <p class="detail-pera">If you're new to exercise, slowly increase the length and intensity of your exercise. Keep increasing the length of time of exercise up until you reach 30 minutes of moderate to vigorous activity a day. If you can't be active for an entire 30 minutes, try breaking those 30 minutes into two periods of 15 minutes or 3 periods of 10 minutes.</p>
+                    <p class="bold-text pt-pb">What's Moderate vs. Vigorous Activity?</p>
+                    <p class="detail-pera">Moderate activity is anything that makes you breathe as hard as you do during a brisk walk. During moderate activities, you'll notice a slight increase in heart rate and breathing, but you may not break a sweat.</p>
+                    <p class="detail-pera">Vigorous activities generally engage large muscle groups and cause a noticeable increase in heart rate, breathing depth and frequency, and sweating.</p>
+                    <p class="detail-pera">Moderate Activities Examples:</p>  
+                    <ul class="left-side">
                         <li>Hiking</li>
                         <li>Roller skating at a leisurely pace</li> 
                         <li>Yoga</li>
                         <li>Playing Frisbee</li>
                         <li>Gardening</li>
                     </ul> 
-                    <p class="detail-pera pt-pb">Vigorous Activities Examples:</p>  
-                    <ul class="left-side font-14 mt-30">
+                    <p class="detail-pera">Vigorous Activities Examples:</p>  
+                    <ul class="left-side">
                         <li>Jogging</li>
                         <li>Running</li> 
                         <li>Jumping rope</li>
                         <li>Karate</li>
                         <li>Rock climbing</li>
                     </ul>
-                    <p class="detail-pera pt-pb">An easy way to determine your intensity is to do a "Talk Test." While engaging in activity, ask yourself if you could hold a conversation.</p>  
-                    <ul class="left-side font-14 mt-30">
+                    <p class="detail-pera">An easy way to determine your intensity is to do a "Talk Test." While engaging in activity, ask yourself if you could hold a conversation.</p>  
+                    <ul class="left-side">
                         <li>If you're able to sing, you're doing light activity.</li>
                         <li>If you're able to comfortably carry on a conversation, you're doing moderate activity.</li> 
                         <li>If you're too out of breath to talk to another person, you're doing vigorous activity.</li>
                     </ul>
-                    <p class="bold-text">Tips to Help You Become and Stay Active</p> 
-                    <ul class="left-side font-14 mt-30">
+                    <p class="bold-text pt-pb">Tips to Help You Become and Stay Active</p> 
+                    <ul class="left-side">
                         <li>Start off slowly.</li> 
                         <li>Remember, doing some activity is better than none.</li>
                         <li>Find an activity you enjoy doing.</li>
@@ -61,8 +60,8 @@
                         <li>Pay attention to the small successes as you start exercising.</li>
                         <li>Think about what situations make it especially likely for you to not be active. Try to anticipate these situations and plan ahead.</li>
                     </ul>
-                    <p class="bold-text">Strategies to Fit More Activity into Your Daily Life</p>
-                    <ul class="left-side font-14 mt-30">
+                    <p class="bold-text pt-pb">Strategies to Fit More Activity into Your Daily Life</p>
+                    <ul class="left-side">
                         <li>Take the stairs instead of the elevator.</li>
                         <li>Park farther away from the front door.</li>
                         <li>Stand instead of sitting.</li> 
@@ -77,19 +76,19 @@
                         <li>Go for a walk with a friend instead of meeting for a meal or coffee.</li>
                         <li>Have "walking meetings" at work.</li> 
                     </ul>
-                    <p class="bold-text">Benefits of Physical Activity</p>
-                    <p class="detail-pera pt-pb">Being physically active is one of the best things you can do for your health. It helps you maintain a healthy weight and lowers your risk of heart disease, stroke, and diabetes.</p> 
-                    <p class="detail-pera pt-pb">Physical activity has been associated with the following benefits for cancer patients and survivors:</p> 
-                    <p class="detail-pera pt-pb">Reductions in:</p>
-                    <ul class="left-side font-14 mt-30">
+                    <p class="bold-text pt-pb">Benefits of Physical Activity</p>
+                    <p class="detail-pera">Being physically active is one of the best things you can do for your health. It helps you maintain a healthy weight and lowers your risk of heart disease, stroke, and diabetes.</p> 
+                    <p class="detail-pera">Physical activity has been associated with the following benefits for cancer patients and survivors:</p> 
+                    <p class="detail-pera">Reductions in:</p>
+                    <ul class="left-side">
                         <li>Fatigue</li>
                         <li>Depression</li> 
                         <li>Anxiety</li>
                         <li>Sleep disturbances</li> 
                         <li>Chronic conditions</li>
                     </ul>
-                    <p class="detail-pera pt-pb">Improved:</p>
-                    <ul class="left-side font-14 mt-30"> 
+                    <p class="detail-pera">Improved:</p>
+                    <ul class="left-side"> 
                         <li>Quality of life</li>
                         <li>Body image and self-esteem</li> 
                         <li>Mood</li>
@@ -101,9 +100,9 @@
                         <li>Cognitive functioning</li>
                     </ul>
 
-                    <p class="bold-text">Safety Precautions</p>
-                    <p class="detail-pera pt-pb">Prior to starting an exercise program, it's important that you check with your doctor to ensure physical activity is safe for you. Once you've been cleared for activity by your doctor, it's important to exercise caution when becoming active to prevent injury and ensure success.</p> 
-                    <ul class="left-side font-14 mt-30">
+                    <p class="bold-text pt-pb">Safety Precautions</p>
+                    <p class="detail-pera">Prior to starting an exercise program, it's important that you check with your doctor to ensure physical activity is safe for you. Once you've been cleared for activity by your doctor, it's important to exercise caution when becoming active to prevent injury and ensure success.</p> 
+                    <ul class="left-side">
                         <li>Start slowly and gradually increase intensity and time of exercise sessions.</li>
                         <li>Monitor your intensity throughout your exercise session.</li> 
                         <li>Take breaks as needed.</li>
@@ -111,25 +110,48 @@
                         <li>Stay hydrated.</li>
                         <li>Keep a phone nearby in case of emergency.</li>
                     </ul>
-                    <p class="detail-pera pt-pb">Special considerations:</p>
-                    <ul class="left-side font-14 mt-30">  
-                        <li>If you've anemia, delay activity until anemia is better.</li>
-                        <li>If you've a weakened immune system, avoid public gyms and other public places until white blood cell counts return to safe levels.</li>
-                        <li>If you're undergoing radiation, avoid swimming pools because chlorine may irritate the skin.</li>
-                        <li>If you've joint pain, engage in low impact activities like walking or biking.</li> 
+                    <p class="detail-pera">Special considerations:</p>
+                    <ul class="left-side">  
+                        <li>If you have anemia, delay activity until anemia is better.</li>
+                        <li>If you have a weakened immune system, avoid public gyms and other public places until white blood cell counts return to safe levels.</li>
+                        <li>If you have undergoing radiation, avoid swimming pools because chlorine may irritate the skin.</li>
+                        <li>If you have joint pain, engage in low impact activities like walking or biking.</li> 
                     </ul>
-                    <p class="detail-pera pt-pb">If you've peripheral neuropathy, compromised balance or are concerned about falling:</p> 
-                    <ul class="left-side font-14 mt-30"> 
+                    <p class="detail-pera">If you have peripheral neuropathy, compromised balance or are concerned about falling:</p> 
+                    <ul class="left-side"> 
                         <li>Hold onto handrails on the treadmill or other exercise equipment.
                         <li>Exercise on smooth surfaces.
                         <li>Don't wear clothes that bunch up or drag on the ground.
                         <li>Double knot your shoes.
                     </ul>
-                    <p class="bold-text">Is Being Sedentary Linked to Health Risks?</p> 
-                    <ul class="left-side font-14 mt-30"> 
+                    <p class="bold-text  pt-pb">Is Being Sedentary Linked to Health Risks?</p> 
+                    <ul class="left-side"> 
                         <li>Yes. Research has shown that sedentary behavior, such as prolonged periods of television viewing, sitting, and lying down, is a risk factor for developing chronic conditions, including cancer, cardiovascular disease, and type 2 diabetes.</li>
                     </ul>
-                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                    <p class="bold-text  pt-pb"><u>Resources:</u></p>
+                    <p class="detail-pera">North/Northwest:</p>
+                    <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.lakeforesthfc.com/?doing_wp_cron=1584979354.0781970024108886718750')" href="https://www.lakeforesthfc.com/?doing_wp_cron=1584979354.0781970024108886718750" target="_blank">Northwestern Medicine Lake Forest Health and Fitness Center</a></li> 
+                    <li><a (click)="logWebsite('https://www.nm.org/locations/grayslake-outpatient-center')" href="https://www.nm.org/locations/grayslake-outpatient-center" target="_blank">Northwestern Medicine Grayslake Outpatient Center</a></li>
+                    <li><a (click)="logWebsite('https://www.cancerwellness.org')" href="https://www.cancerwellness.org" target="_blank">Cancer Wellness Center</a> - Locations in Grayslake and Northbrook</li>
+                    </ul>
+                    <p class="detail-pera">Central-Chicago:</p>
+                    <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.gildasclubchicago.org')" href="https://www.gildasclubchicago.org" target="_blank">Gilda's Club Chicago:</a></li> 
+                    <li><a (click)="logWebsite('https://wellnesshouse.org/program-locations')" href="https://wellnesshouse.org/program-locations" target="_blank">Wellness House</a> – Exercise for Cancer at Mile Square Health Center</li>
+                    <li><a (click)="logWebsite('https://www.recoveryonwater.org')" href="https://www.recoveryonwater.org" target="_blank">Recover on Water (Breast Cancer)</a> - Rowing classes for breast cancer patients and survivors</li> 
+                    </ul>
+                    <p class="detail-pera">West:</p>
+                    <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.livestrong.org/ymca-search')" href="https://www.livestrong.org/ymca-search" target="_blank">Livestrong at the YMCA</a> – Program runs in Berwyn and Oak Park</li>
+                    <li><a (click)="logWebsite('https://wellnesshouse.org/program-locations')" href="https://wellnesshouse.org/program-locations" target="_blank">Wellness House</a> in Hinsdale</li>
+                    <li><a (click)="logWebsite('https://livingwellcrc.org')" href="https://livingwellcrc.org" target="_blank">LivingWell Cancer Resource Center</a> in Geneva</li>
+                    </ul>
+                    <p class="detail-pera">South/Southwest:</p>
+                    <ul class="left-side">
+                    <li><a (click)="logWebsite('https://cancersupportcenter.org')" href="https://cancersupportcenter.org" target="_blank">Cancer Support Center</a> in Homewood</li>
+                    </ul>
+                    <img src="assets/img/PhysicalActivity_B.jpg" class="mt-20" width="100%" />
                 </div>   
             </div> 
             <div class="col-md-3 col-sm-12">  
@@ -140,7 +162,11 @@
                         <li><a [routerLink]="'/patient-resources/well-being/social'">Social Support</a></li>
                         <li><a [routerLink]="'/patient-resources/well-being/stress'">Stress Management</a></li>
                         <li class="active" ><a [routerLink]="'/patient-resources/well-being/physical'">Physical Activity</a></li>
-                        <li><a [routerLink]="'/patient-resources/well-being/problem'">Problem Solving</a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/well-being/problem'">Problem Solving</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/smokingcessation'">Smoking Cessation and Substance Abuse</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/sunprotection'">Sun Protection</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/supportive'">Supportive Oncology and Palliative Care</a></li>
+                        <br><br>
                         <li><a [routerLink]="'/patient-resources/well-being'"> < BACK TO Enhancing Well-Being</a></li>
                     </ul>
                 </div>

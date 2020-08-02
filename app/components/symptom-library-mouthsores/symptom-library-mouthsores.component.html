@@ -1,0 +1,87 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Dashboard</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Symptom Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Mouth Sores</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Mouth Sores</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-mouthsores.pdf')" href="assets/pdf/symptom-library-mouthsores.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Listen to the full audio of this page below</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">The medical term for mouth sores is mucositis. They can look like cuts and/or ulsers in the mouth. Mouth sores can range in severity. You might feel a slight discomfort in your mouth or you may be unable to eat because of the pain. Below you will find strategies to manage mouth sores at home and how your health care team can help.</p>
+                    <p class="detail-pera"><b>Note:</b> Let your health care team know when you start noticing changes in your mouth.</p>        
+                    <p class="detail-pera">Common causes of mouth sores may include:</p> 
+                    <ul class="left-side">
+                        <li>Certain types of chemotherapy and immunotherapy</li> 
+                        <li>Certain drugs used to treat cancer</li> 
+                        <li>Radiation</li> 
+                        <li>Dehydration</li> 
+                        <li>Being low on certain vitamins</li>
+                        <li>Use of alcohol and/or tobacco</li>  
+                    </ul>
+                    <p class="semibold-text pt-pb">Self-care Strategies</p>
+                    <ul class="left-side">
+                        <li>Avoid foods and drinks that are spicy, crunchy, salty, or sugary.</li>
+                        <li>Avoid drinking alcoholic drinks and using tobacco products.</li>
+                        <li>Avoid wearing your dentures at night and remove them between meals.</li>
+                        <li>Don't use mouthwashes or rinses that have alcohol in them.</li>
+                        <li>Eat foods that are easy to swallow. Try eating foods that are wet and soft.</li>
+                        <li>Use a blender to make milkshakes and/or to blend your food to make eating less painful.</li>
+                        <li>Try over-the-counter lozenges or sprays that can numb your mouth.</li> 
+                        <li>Over-the-counter pain medication can help alleviate the pain.</li> 
+                        <li>Make sure to wash your teeth often. Use a toothette if it becomes too painful to brush your teeth with a normal toothbrush.</li>
+                        <li>Rinse or gargle with a solution of either 1/4 teaspoon of salt or 1 teaspoon of baking soda in 1 cup (8 ounces) of warm water. Follow with a plain water rinse.</li>
+                    </ul>
+                    <br>    
+                    <p class="detail-pera">Strategies to Prevent Mouth Sores</p>
+                    <ul class="left-side">
+                        <li>Before and during chemotherapy treatment, suck on ice chips to help prevent mouth sores from developing.</li> 
+                        <li>Clean and check your mouth daily. If you notice any changes in your mouth, let your health care team know.</li>  
+                        <li>Before starting any cancer treatment that involves the mouth and throat, you may want to visit an oncologic dentist to minimize the side effects from the treatment.</li>  
+                    </ul>
+                    <br>
+                    
+                    <p class="semibold-text pt-pb">How Your Care Team can Help</p>
+                    <p class="detail-pera">If self-care strategies don't help, ask your health care team whether they can prescribe you a mouthwash solution that can reduce the pain and heal the mouth sores. They may also prescribe you pain medication.</p>
+                    <p class="detail-pera">To learn more about mouth sores click on the links below:</p>
+                     <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.cancer.net/coping-with-cancer/physical-emotional-and-social-effects-cancer/managing-physical-side-effects/mouth-sores-or-mucositis')" href="https://www.cancer.net/coping-with-cancer/physical-emotional-and-social-effects-cancer/managing-physical-side-effects/mouth-sores-or-mucositis" target="_blank">Go to Cancer.Net for more information on mouth sores</a></li>
+                    <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/mouth-gum-throat-problems')" href="https://survivorship.cancer.gov/springboard/symptoms/mouth-gum-throat-problems" target="_blank">Go to Spring Beyond Cancer for more information on mouth sores</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">All symptoms</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Pain</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatigue</a></li>
+                        <li><a href="#/symptom-library-depression">Sadness</a></li>
+                        <li><a href="#/symptom-library-anxiety">Anxiety</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnia</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Physical Function</a></li>
+                        <li><a href="#/symptom-library-nausea">Nausea & Vomiting</a></li>
+                        <li><a href="#/symptom-library-sexlife">Changes in Your Sex Life</a></li>
+                        <li><a href="#/symptom-library-breath">Shortness of Breath</a></li>
+                        <li><a href="#/symptom-library-constipation">Constipation</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrhea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Peripheral Neuropathy</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Lymphedema</a></li>
+                        <li class="active"><a href="#/symptom-library-mouthsores">Mouth Sores</a></li>
+                        <li><a href="#/symptom-library-skin">Dry, Itchy/Blistery, or Painful Skin</a></li>       
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

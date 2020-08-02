@@ -11,15 +11,12 @@ import {TimedSegment} from "../../../../timedsegment.model";
 })
 export class WellBeingComponent implements OnInit {
 
-  card1 = [];
-  card2 = [];
+  cardAll = [];
 
   constructor(private redcapService: RedcapService) { }
 
   ngOnInit() {
-    this.card1 = this.redcapService.getWellBeing_Cards(0,3);
-    this.card2 = this.redcapService.getWellBeing_Cards(3,5);
-
+    this.cardAll = this.redcapService.getWellBeing_Cards(0,10);
   }
 
   saveFavorite(label:string){

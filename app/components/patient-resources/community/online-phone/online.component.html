@@ -14,18 +14,18 @@
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
                         <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
-                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                        <a (click)= "logPDF('online.pdf')" href="assets/pdf/online.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Support Online and by Phone</h2>
                     <span>Listen to the full audio of this page below</span>
                     <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br> <br>
+                    <p class="detail-pera">Organizations such as the American Cancer Society provide cancer information, helpful resources, and support services at no cost online and by phone. Some organizations serve people living with any type of cancer, while others offer resources for people with specific types of cancer or unique needs.</p>
 
-                    <p class="detail-pera pt-pb">Organizations such as the American Cancer Society provide cancer information, helpful resources, and support services at no cost online and by phone. Some organizations serve people living with any type of cancer, while others offer resources for people with specific types of cancer or unique needs.</p>
-
-                    <p class="semibold-text">Support for any Type of Cancer</p>
+                    <p class="semibold-text pt-pb">Support for any Type of Cancer</p>
 
                     <p>The following organizations offer websites and telephone hotlines to help you learn more about your cancer diagnosis, treatment options, and support resources:</p>
-                    <ul class="left-side font-14 mt-30">
+                    <ul class="left-side">
                         <li><a (click)="logWebsite('https://www.cancer.org')" href='https://www.cancer.org' target='_blank'>American Cancer Society (ACS)</a>*</li>
                         <li><a (click)="logWebsite('https://www.cancer.gov')" href='https://www.cancer.gov' target='_blank'>National Cancer Institute (NCI)</a>*</li>
                         <li><a (click)="logWebsite('https://survivorship.cancer.gov')" href='https://survivorship.cancer.gov' target='_blank'>Springboard Beyond Cancer</a></li> 
@@ -34,13 +34,13 @@
                     </ul>
                     *Services offered in English and Spanish
 
-                    <p class="semibold-text">Support for Specific Types of Cancer</p>
-                    <p class="detail-pera pt-pb">Many organizations are dedicated to providing information, resources, and support to people living with a specific type of cancer.  Some offer services in both English and Spanish. To see a list of organizations dedicated to specific types of cancer, <a (click)="logWebsite('https://www.cancer.net/coping-with-cancer/finding-support-and-information/cancer-specific-resources')" href='https://www.cancer.net/coping-with-cancer/finding-support-and-information/cancer-specific-resources' target='_blank'>click here</a>.</p>
+                    <p class="semibold-text pt-pb">Support for Specific Types of Cancer</p>
+                    <p class="detail-perab">Many organizations are dedicated to providing information, resources, and support to people living with a specific type of cancer.  Some offer services in both English and Spanish. To see a list of organizations dedicated to specific types of cancer, <a (click)="logWebsite('https://www.cancer.net/coping-with-cancer/finding-support-and-information/cancer-specific-resources')" href='https://www.cancer.net/coping-with-cancer/finding-support-and-information/cancer-specific-resources' target='_blank'>click here</a>.</p>
 
-                    <p class="semibold-text">Support for Young Adults with Cancer</p>
-                    <p class="detail-pera pt-pb">People living with cancer in their 20s and 30s face unique challenges. To see a list of dedicated programs and support communities for young adults with cancer, <a (click)="logWebsite('https://www.cancer.net/navigating-cancer-care/young-adults-and-teenagers/resources-young-adults-with-cancer')" href='https://www.cancer.net/navigating-cancer-care/young-adults-and-teenagers/resources-young-adults-with-cancer' target='_blank'>click here</a>.</p>
+                    <p class="semibold-text  pt-pb">Support for Young Adults with Cancer</p>
+                    <p class="detail-pera">People living with cancer in their 20s and 30s face unique challenges. To see a list of dedicated programs and support communities for young adults with cancer, <a (click)="logWebsite('https://www.cancer.net/navigating-cancer-care/young-adults-and-teenagers/resources-young-adults-with-cancer')" href='https://www.cancer.net/navigating-cancer-care/young-adults-and-teenagers/resources-young-adults-with-cancer' target='_blank'>click here</a>.</p>
 
-                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                    <img src="assets/img/SupportOnlinebyPhone_B.jpeg" class="mt-20" width="100%" />
                 </div>   
             </div> 
             <div class="col-md-3 col-sm-12">  

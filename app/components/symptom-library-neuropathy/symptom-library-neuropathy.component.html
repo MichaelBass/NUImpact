@@ -1,0 +1,93 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Dashboard</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Symptom Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Peripheral Neuropathy</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Peripheral Neuropathy</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-neuropathy.pdf')" href="assets/pdf/symptom-library-neuropathy.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Listen to the full audio of this page below</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">Some people with cancer experience tingling, numbness, weakness, and/or problems with balance and coordination. These feelings, which often target the fingers, hands, toes, and on the bottoms of the feet, can be signs of a condition called peripheral neuropathy. Peripheral neuropathy is caused by nerve damage and can be a side effect of some chemotherapies or even radiation.</p>
+                    <p class="detail-pera">If you have cancer and are experiencing signs of peripheral neuropathy for the first time, it’s possible that the cause is the cancer or its treatment.</p>
+                    <p class="detail-pera">Peripheral neuropathy typically begins during treatment and, for some people, can persist after treatment has ended.</p>
+                    <p class="detail-pera">Some patients describe their peripheral neuropathy as feeling like their feet or hands have "fallen asleep". Because of this, some patients may have difficulty with handling small objects, meal preparation, household chores, walking, and climbing stairs. Because it may be difficult to feel where your feet are, some patients with peripheral neuropathy are at higher risk for falls</p>
+                    <p class="detail-pera">While there is no single treatment for peripheral neuropathy, many patients have found relief for their symptoms using a variety treatments and self-care strategies. It’s helpful to discuss these strategies with your treatment team, as the best approach for you may depend on what caused the neuropathy, the nerves involved, and the affected part(s) of your body.</p>
+
+                    <p class="semibold-text pt-pb">Self-care Strategies</p><br>
+                    <ul class="left-side">
+                        <li>Avoid exposing affected areas to extreme heat or cold.</li>
+                        <li>Try shoe insoles, gel inserts, or arch supports if walking is painful.</li>
+                        <li>Place needed items within arm’s reach when in bed.</li>
+                        <li>Limit or avoid alcohol.</li>
+                        <li>Consider therapies such as physical and occupational therapy, massage, acupuncture, and relaxation exercises.</li>
+                        <li>Take steps to prevent injury to affected areas:</li>
+                            <ul class="left-side">
+                            <li>Be very careful when using sharp or dangerous objects like knives, nail clippers, tools for gardening or home repairs.</li>
+                            <li>Don’t walk around the house or outdoors with bare feet. Wear well-fitting shoes or slippers at all times when out of bed.</li>
+                            <li>Cover your skin before entering cold places or touching cold objects.</li>
+                            <li>Before bathing, test the water first by a part of your body not affected by neuropathy (such as, an elbow), to make sure the water is not too hot.</li> 
+                            <li>Inspect your skin regularly for cuts, blisters, or sores. Even if your feet hurt, you may not sense an ingrown toenail or infection. Consider seeing a podiatrist for regular foot check-ups.</li> 
+                            <li>Use potholders when cooking and gloves when gardening.</li>
+                            </ul> 
+                        <li>Use extra caution if you have problems with strength or balance:</li>
+                            <ul class="left-side">
+                            <li>Wear shoes with rubber soles.</li> 
+                            <li>Remove throw rugs.</li>
+                            <li>Use handrails on stairs.</li> 
+                            <li>Place a non-skid bath mat in the tub or shower.</li> 
+                            <li>Use a grab bar in the shower.</li> 
+                            <li>Put a night light in the hallway to guide you to the bathroom at night.</li>
+                            </ul>
+                    </ul>
+                    <br>    
+                    <p class="semibold-text pt-pb">How your Care Team can Help</p><br>
+                    <p class="detail-pera">Your treatment team may be able to help with additional strategies to help with symptoms of peripheral neuropathy, including:</p>
+                    <ul class="left-side">
+                        <li>Medications to relieve pain</li>
+                        <li>Physical therapy and occupational therapy to help with pain, skin desensitization, balance, coordination, strength, and safety</li>
+                        <li>Adjusting your diet to include specific nutrients that may help with nerve-related problem (e.g., B-1, B-6 or B-12)</li>
+                    </ul>
+                    <p class="detail-pera">To learn more about peripheral neuropathy click on the links below:</p>
+                    <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.cancer.net/coping-with-cancer/physical-emotional-and-social-effects-cancer/managing-physical-side-effects/nerve-problems-or-neuropathy')" href="https://www.cancer.net/coping-with-cancer/physical-emotional-and-social-effects-cancer/managing-physical-side-effects/nerve-problems-or-neuropathy" target="_blank">Go to Cancer.Net for more information on peripheral neuropathy</a></li>
+                        <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/tingling-burning-numbness')" href="https://survivorship.cancer.gov/springboard/symptoms/tingling-burning-numbness" target="_blank">Go to Spring Beyond Cancer for more information on peripheral neuropathy</a></li>
+                        </ul>
+                    <img src="assets/img/Neuropathy_B.jpg" class="mt-20" width="100%" />
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">All symptoms</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Pain</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatigue</a></li>
+                        <li><a href="#/symptom-library-depression">Sadness</a></li>
+                        <li><a href="#/symptom-library-anxiety">Anxiety</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnia</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Physical Function</a></li>
+                        <li><a href="#/symptom-library-nausea">Nausea & Vomiting</a></li>
+                        <li><a href="#/symptom-library-sexlife">Changes in Your Sex Life</a></li>
+                        <li><a href="#/symptom-library-breath">Shortness of Breath</a></li>
+                        <li><a href="#/symptom-library-constipation">Constipation</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrhea</a></li>
+                        <li class="active"><a href="#/symptom-library-neuropathy">Peripheral Neuropathy</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Lymphedema</a></li>
+                        <li><a href="#/symptom-library-mouthsores">Mouth Sores</a></li>
+                        <li><a href="#/symptom-library-skin">Dry, Itchy/Blistery, or Painful Skin</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

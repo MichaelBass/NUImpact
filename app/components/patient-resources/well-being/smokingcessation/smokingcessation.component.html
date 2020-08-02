@@ -1,0 +1,81 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/well-being">Enhancing Well-Being</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Smoking Cessation and Substance Abuse</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('smokingcessation.pdf')" href="assets/pdf/smokingcessation.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Smoking Cessation and Substance Abuse</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">Smoking can negatively affect your physical and mental health. In the following sections, you’ll learn about some of the effects smoking and options for quitting.</p>
+                    <p class="semibold-text  pt-pb">Health Risks of Smoking</p>
+                    <p class="detail-pera">Smoking is the leading cause of cancer in the United States. Smoking can also reduce the effectiveness of your cancer treatment and worsen treatment side effects, such as fatigue, weight loss and risk of infection.</p>
+                    <p class="semibold-text  pt-pb">Benefits of Quitting Smoking</p>
+                    <ul class="left-side">
+                        <li>Faster recovery time from cancer treatment</li> 
+                        <li>Better treatment outcomes</li>
+                        <li>Reduced chance of your cancer returning or developing a new cancer.</li>
+                        <li>Heart rate and blood pressure may return to normal.</li>
+                        <li>Healthier quality of life</li>
+                        <li>Within a few weeks, people may have improved circulation, produce less phlegm, and don’t cough or wheeze as often.</li>
+                        <li>Within several months of quitting, people can expect substantial improvements in lung function.</li>
+                        <li>Within a few years of quitting, people will have lower of heart disease, and other chronic diseases than if they had continued to smoke.</li>
+                    </ul>
+                    <p class="semibold-text  pt-pb">Getting Help to Quit Smoking</p>
+                    <p class="detail-pera">You can play an active role in your cancer treatment and reach your full health potential. It's never too late to quit smoking, and your care team at Northwestern is here to help.</p>
+                    <p class="detail-pera">The Lurie Cancer Center has a Tobacco Cessation Program that helps cancer patients quit smoking by providing therapy, medications, and phone-based resources.</p>
+                    <ul class="left-side">
+                        <li>Schedule an appointment with a tobacco treatment specialist through Lurie Cancer Center Supportive Oncology by calling 312.921.7848 (312.921.QUIT). Only referrals from Lurie Cancer Center patients in the central region are accepted at this time. <a (click)="logWebsite('https://www.cancer.northwestern.edu/cancer-care/specialized-clinical-services/tobacco-cessation-program.html')" href="https://www.cancer.northwestern.edu/cancer-care/specialized-clinical-services/tobacco-cessation-program.html" target="_blank">Lurie Cancer Center’s Tobacco Cessation Program</a></li> 
+                        <li>The Center for Disease Control's link below provides several resources to quit-lines, government resources, and other organizations to help people quit smoking. <a (click)="logWebsite('https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/quitting-resources.html')" href="https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/quitting-resources.html" target="_blank">CDC’s Resources to Help People Quit Smoking</a></li>
+                    </ul>
+                    <p class="semibold-text  pt-pb">Health Risks of Substance Use</p>
+                    <p class="detail-pera">People with addiction often have one or more associated health issues, which could include lung or heart disease, stroke, cancer, or mental health conditions.</p> 
+                    <p class="detail-pera">Some of the health risks are:</p> 
+                    <ul class="left-side">
+                        <li>Methamphetamine can cause severe dental problems, known as 'meth mouth'</li>
+                        <li>Opioids can lead to overdose and death</li>
+                        <li>Inhalants, may damage or destroy nerve cells, either in the brain or the peripheral nervous system (the nervous system outside the brain and spinal cord)</li>
+                        <li>Drug use can also increase the risk of contracting infections.</li> 
+                    </ul>
+                    <p class="detail-pera">Looking for Help:</p>
+                    <p class="semibold-text">SAMHSA’s National Helpline: 1-800-662-4357</p>
+                    <ul class="left-side">
+                        <li>They help individuals and families who are facing mental and/or substance use disorder.</li> 
+                        <li>They provide information on treatment referrals, support groups, community-based organizations, and much more!</li> 
+                    </ul>
+                    <img src="assets/img/SmokingCessationandSubstanceUse_B.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li class="active" ><a [routerLink]="'/patient-resources/well-being/talking'">Talking with Your Health Care Team</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/social'">Social Support</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/stress'">Stress Management</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/physical'">Physical Activity</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/problem'">Problem Solving</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/well-being/smokingcessation'">Smoking Cessation and Substance Abuse</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/sunprotection'">Sun Protection</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/supportive'">Supportive Oncology and Palliative Care</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/well-being'"> < BACK TO Enhancing Well-Being</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

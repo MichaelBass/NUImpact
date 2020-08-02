@@ -3,6 +3,11 @@
         margin-bottom: 0px;
     }
 }
+
+.fav-item:nth-child(4n+1){
+    clear:both;
+}
+
 .bg-white {
     background: #fff;
 }

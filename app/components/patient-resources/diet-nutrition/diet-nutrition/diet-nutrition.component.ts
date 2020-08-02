@@ -12,16 +12,12 @@ import {TimedSegment} from "../../../../timedsegment.model";
 export class DietNutritionComponent implements OnInit {
 
   card1 = [];
-  card2 = [];
-  //card3 = [];
 
   constructor(private redcapService: RedcapService) { }
 
   ngOnInit() {
-    this.card1 = this.redcapService.getDiet_Cards(0,3);
-    this.card2 = this.redcapService.getDiet_Cards(3,5);
-    //this.card2 = this.redcapService.getDiet_Cards(3,6);
-    //this.card3 = this.redcapService.getDiet_Cards(6,7);
+    this.card1 = this.redcapService.getDiet_Cards(0,5);
+
   }
 
   saveFavorite(label:string){

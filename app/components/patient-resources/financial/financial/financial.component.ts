@@ -16,7 +16,7 @@ export class FinancialComponent implements OnInit {
   constructor(private redcapService: RedcapService) { }
 
   ngOnInit() {
-    this.card1 = this.redcapService.getFinancial_Cards(0,3);
+    this.card1 = this.redcapService.getFinancial_Cards(0,4);
   }
 
   saveFavorite(label:string){

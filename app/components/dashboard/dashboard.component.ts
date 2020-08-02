@@ -14,12 +14,13 @@ export class DashboardComponent implements OnInit {
   isWarn: boolean = true;
  
   card = [];
-  title: string = "Based on the results from your recent health questionnaire, there are no symptoms to report. This may not be always be the case as symptoms may change; remember you can visit the symptom library and other sections in this website anytime you want.";
+  title: string = "Based on your responses from your recent health questionnaire, your symptom results are in the normal range with nothing significant to report on your dashboard. This may not always be the case as your symptoms may change and your dashboard will be updated each time you complete a new health questionnaire. To view the results of your health questionnaire, log into MyChart.";
+  no_symptom: string = "Based on your responses from your recent health questionnaire, your symptom results are in the normal range with nothing significant to report on your dashboard. This may not always be the case as your symptoms may change and your dashboard will be updated each time you complete a new health questionnaire. To view the results of your health questionnaire, log into MyChart.";
+  symptom: string = "The symptoms below were selected for you based on the results of your recent health questionnaire. Click on a symptom category to learn about how you and your health care team may manage your symptom.  If you would like to view the results of your health questionnaire, log into MyChart.";
 
 	constructor(private route: ActivatedRoute, private redcapService: RedcapService, private helperService: HelperService) { }
 
 	ngOnInit() {
-   // this.card = this.redcapService.getSymptom_Cards(0,6);
 
     this.route.queryParamMap.subscribe(
     ( params: ParamMap) => {
@@ -49,7 +50,7 @@ export class DashboardComponent implements OnInit {
               this.redcapService.dashboard = qs_param;
               this.card = this.redcapService.getSymptom_CardsForQS();
               if(this.card.length >0){
-                this.title = "Based on the results from your recent health questionnaire, you may want to view the sections below. These sections provide useful information about how you and your health care team can manage your symptoms.";
+                this.title = this.symptom;
               }
             }
           );
@@ -66,14 +67,14 @@ export class DashboardComponent implements OnInit {
                 this.redcapService.dashboard = qs_param;
                 this.card = this.redcapService.getSymptom_CardsForQS();
                 if(this.card.length >0){
-                  this.title = "Based on the results from your recent health questionnaire, you may want to view the sections below. These sections provide useful information about how you and your health care team can manage your symptoms.";
+                  this.title = this.symptom;
                 }                
               }
             );
           } else {
             this.card = this.redcapService.getSymptom_CardsForQS();
             if(this.card.length >0){
-              this.title = "Based on the results from your recent health questionnaire, you may want to view the sections below. These sections provide useful information about how you and your health care team can manage your symptoms.";
+              this.title = this.symptom;
             } 
           }
         }
@@ -88,6 +89,6 @@ export class DashboardComponent implements OnInit {
   }
 
   displayAll(){
-    this.card = this.redcapService.getSymptom_Cards(0,12);
+    this.card = this.redcapService.getSymptom_Cards(0,15);
   }
 }

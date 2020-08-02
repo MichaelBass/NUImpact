@@ -12,14 +12,13 @@
 			</div>
 			<div class="border"></div>
 			<div class="col-md-7">
-				<p class="top-head-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-					tempor invidunt ut labore.</p>
+				<p class="top-head-2">See below for important resources that patients have found useful during their cancer journey.</p>
 			</div>
 		</div>	
 	</div>
     
 	<div class="content-grid clearfix row">
-		<div class="col-md-4" *ngFor="let cardsrc of card1">
+		<div class="col-md-4 fav-item" *ngFor="let cardsrc of card1">
 			<mat-card >
 			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
 			  <mat-card-content>
@@ -37,121 +36,4 @@
 			</mat-card>
 		</div>
 	</div>
-
-	<div class="content-grid clearfix row">
-		<div class="col-md-4" *ngFor="let cardsrc of card2">
-			<mat-card >
-			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
-			  <mat-card-content>
-			  	<h4 class="card-title">{{cardsrc.label}}</h4>
-			  </mat-card-content>
-			  <mat-card-content>
-				  <p class="card-details">
-				  	{{cardsrc.text}}
-				  </p>
-			   </mat-card-content> 
-			  <mat-divider></mat-divider>
-			  <mat-card-actions>
-			    <a [routerLink]="['/',cardsrc.route,cardsrc.route2]"><i class="material-icons">arrow_forward </i>View all resources</a>
-			  </mat-card-actions>
-			</mat-card>
-		</div>
-	</div>
-    <!--
-	<div class="content-grid clearfix row ">
-		<div class="col-md-4">
-			<mat-card >
-			  <img mat-card-image src="assets/img/enhancing.png" alt="Photo of a Shiba Inu">
-			  <mat-card-content>
-			  	<h4 class="card-title font-20">Enhancing Well-Being</h4>
-			  </mat-card-content>
-			  <mat-card-content>
-				  <p class="card-details">
-				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-				  </p>
-			   </mat-card-content> 
-			  <mat-divider></mat-divider>
-			  <mat-card-actions>
-			    <a [routerLink]="'/patient-resources/diet-nutrition'"><i class="material-icons">arrow_forward </i>View all resources</a>
-			  </mat-card-actions>
-			</mat-card>
-		</div>
-        
-        <div class="col-md-4">
-			<mat-card >
-			  <img mat-card-image src="assets/img/community.png" alt="Photo of a Shiba Inu">
-			  <mat-card-content>
-			  	<h4 class="card-title font-20">Community Resources</h4>
-			  </mat-card-content>
-			  <mat-card-content>
-				  <p class="card-details">
-				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-				  </p>
-			   </mat-card-content> 
-			  <mat-divider></mat-divider>
-			  <mat-card-actions>
-			    <a [routerLink]="'/patient-resources/diet-nutrition'"><i class="material-icons">arrow_forward </i>View all resources</a>
-			  </mat-card-actions>
-			</mat-card>
-		</div>
-        
-        <div class="col-md-4">
-			<mat-card >
-			  <img mat-card-image src="assets/img/financial.png" alt="Photo of a Shiba Inu">
-			  <mat-card-content>
-			  	<h4 class="card-title font-20">Financial Resources</h4>
-			  </mat-card-content>
-			  <mat-card-content>
-				  <p class="card-details">
-				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-				  </p>
-			   </mat-card-content> 
-			  <mat-divider></mat-divider>
-			  <mat-card-actions>
-			    <a [routerLink]="'/patient-resources/diet-nutrition'"><i class="material-icons">arrow_forward </i>View all resources</a>
-			  </mat-card-actions>
-			</mat-card>
-		</div>
-        
-	</div>
-    
-    <div class="content-grid clearfix row ">
-		<div class="col-md-4">
-			<mat-card >
-			  <img mat-card-image src="assets/img/diet.png" alt="Photo of a Shiba Inu">
-			  <mat-card-content>
-			  	<h4 class="card-title font-20">Diet & Nutrition</h4>
-			  </mat-card-content>
-			  <mat-card-content>
-				  <p class="card-details">
-				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-				  </p>
-			   </mat-card-content> 
-			  <mat-divider></mat-divider>
-			  <mat-card-actions>
-			    <a [routerLink]="'/patient-resources/diet-nutrition'"><i class="material-icons">arrow_forward </i>View all resources</a>
-			  </mat-card-actions>
-			</mat-card>
-		</div>
-        
-        <div class="col-md-4">
-			<mat-card >
-			  <img mat-card-image src="assets/img/treatment.png" alt="Photo of a Shiba Inu">
-			  <mat-card-content>
-			  	<h4 class="card-title font-20">Treatment Symptom Management</h4>
-			  </mat-card-content>
-			  <mat-card-content>
-				  <p class="card-details">
-				  	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-				  </p>
-			   </mat-card-content> 
-			  <mat-divider></mat-divider>
-			  <mat-card-actions>
-			    <a [routerLink]="'/patient-resources/diet-nutrition'"><i class="material-icons">arrow_forward </i>View all resources</a>
-			  </mat-card-actions>
-			</mat-card>
-		</div>
-        
-	</div>
-    -->
 </div>

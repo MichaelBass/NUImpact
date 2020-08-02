@@ -3,13 +3,13 @@
 	  <ol class="breadcrumb">
 	    <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Dashboard</a></li>
 	    <li class="breadcrumb-item"><a [routerLink]="'/patient-resources'">Patient Resources</a></li>
-	    <li class="breadcrumb-item active mob-hidden" aria-current="page">Financial Resources</li>
+	    <li class="breadcrumb-item active mob-hidden" aria-current="page">Financial & Practical Matters</li>
 	  </ol>
 	</nav> 
 	<div class="top-content pd-top-22 clearfix">
 		<div class="row">
 			<div class="col-md-4 border-right">
-			   	<h2 class="bold-text center-text">Financial Resources</h2>
+			   	<h2 class="bold-text center-text">Financial & Practical Matters</h2>
 			</div>
 			<div class="border"></div>
 			<div class="col-md-8">
@@ -18,7 +18,7 @@
 		</div>	
 	</div>
 	<div class="content-grid clearfix row ">
-		<div class="col-md-4" *ngFor="let cardsrc of card1">
+		<div class="col-md-4 fav-item" *ngFor="let cardsrc of card1">
 			<mat-card >
 			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
 			  <mat-card-content><span (click)= "saveFavorite(cardsrc.label)" class="icon-my-favorites"></span>

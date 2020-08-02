@@ -18,7 +18,7 @@
 		</div>	
 	</div>
 	<div class="content-grid clearfix row ">
-		<div class="col-md-4" *ngFor="let cardsrc of card1">
+		<div class="col-md-4 fav-item" *ngFor="let cardsrc of card1">
 			<mat-card >
 			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
 			  <mat-card-content><span (click)= "saveFavorite(cardsrc.label)" class="icon-my-favorites"></span>
@@ -36,24 +36,5 @@
 			</mat-card>
 		</div>
 	</div>
-    
-    <div class="content-grid clearfix row ">
-		<div class="col-md-4" *ngFor="let cardsrc of card2">
-			<mat-card >
-			  <img mat-card-image [src]="cardsrc.src" alt="Photo of a Shiba Inu">
-			  <mat-card-content><span (click)= "saveFavorite(cardsrc.label)" class="icon-my-favorites"></span>
-			  	<h4 class="card-title font-20">{{cardsrc.label}}</h4>
-			  </mat-card-content>
-			  <mat-card-content>
-				  <p class="card-details">
-				  	{{cardsrc.text}}
-				  </p>
-			   </mat-card-content> 
-			  <mat-divider></mat-divider>
-			  <mat-card-actions>
-			    <a [routerLink]="['/',cardsrc.route,cardsrc.route2,cardsrc.route3]"><i class="material-icons">arrow_forward </i>Read More</a>
-			  </mat-card-actions>
-			</mat-card>
-		</div> 
-	</div> 
+     
 </div>

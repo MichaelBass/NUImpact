@@ -12,13 +12,11 @@ import {TimedSegment} from "../../../../timedsegment.model";
 export class CommunityComponent implements OnInit {
 
   card1 = [];
-  card2 = [];
 
   constructor(private redcapService: RedcapService) { }
 
   ngOnInit() {
-    this.card1 = this.redcapService.getCommunity_Cards(0,3);
-    this.card2 = this.redcapService.getCommunity_Cards(3,4);
+    this.card1 = this.redcapService.getCommunity_Cards(0,4);
   }
 
   saveFavorite(label:string){

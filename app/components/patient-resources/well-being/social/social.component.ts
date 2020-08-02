@@ -45,14 +45,23 @@ export class SocialComponent implements OnInit {
     let timedSegment = this.redcapService.getTimedSegment();
     this.redcapService.logWebsite(timedSegment, site, "website").subscribe( res => {});
   }
-  
+
+  logPDF(doc:string){
+    let timedSegment = this.redcapService.getTimedSegment();
+    this.redcapService.logWebsite(timedSegment, doc, "pdf").subscribe( res => {});
+  }
+    
   checkFavorite(){
     let timedSegment = this.redcapService.getTimedSegment();
     this.redcapService.getFavorites(timedSegment.user).subscribe( res => {
+
+      if(res.length > 0){
       if(res.filter(card => card == this.label).length > 0){
         console.log("found: " + this.label);
         this.isFav = true;
       }
+      }
+
     });
   }
 

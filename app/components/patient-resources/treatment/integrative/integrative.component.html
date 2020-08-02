@@ -14,25 +14,25 @@
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
                         <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
-                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                        <a (click)= "logPDF('integrative.pdf')" href="assets/pdf/integrative.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Integrative Medicine</h2>
                     <span>Listen to the full audio of this page below</span>
                     <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
-
-                    <p class="detail-pera pt-pb">Integrative medicine combines complementary therapies, such as acupuncture and massage, with standard cancer therapies to help manage cancer-related side effects and improve well-being.</p>
-                    <p class="detail-pera pt-pb">Many people diagnosed with cancer explore complementary therapies to support their health during and after cancer treatment. While many integrative therapies can be beneficial, there's also the potential risk of interactions with cancer treatment and adverse effects. To ensure you have the best results without any risk, it's important to keep your healthcare team informed about any complementary therapies you're using. If you or your team has questions about what options might be most helpful, a consultation with a medical doctor with advanced training in Integrative Medicine can support your goals.</p>
-                    <p class="detail-pera pt-pb">The Northwestern Medicine Osher Center for Integrative Medicine offers a full range of complementary and integrative therapies to engage the mind, body, spirit, and community with a focus on lifestyle choices.</p>
-                    <p>Services available at the Northwestern Medicine Osher Center for Integrative Medicine include:</p>
-                    <ul class="left-side font-14 mt-30">
+                    <br><br>
+                    <p class="detail-pera">Integrative medicine combines complementary therapies, such as acupuncture and massage, with standard cancer therapies to help manage cancer-related side effects and improve well-being.</p>
+                    <p class="detail-pera">Many people diagnosed with cancer explore complementary therapies to support their health during and after cancer treatment. While many integrative therapies can be beneficial, there's also the potential risk of interactions with cancer treatment and adverse effects. To ensure you have the best results without any risk, it's important to keep your healthcare team informed about any complementary therapies you're using. If you or your team has questions about what options might be most helpful, a consultation with a medical doctor with advanced training in Integrative Medicine can support your goals.</p>
+                    <p class="detail-pera">The Northwestern Medicine Osher Center for Integrative Medicine offers a full range of complementary and integrative therapies to engage the mind, body, spirit, and community with a focus on lifestyle choices.</p>
+                    <p class="detail-pera">Services available at the Northwestern Medicine Osher Center for Integrative Medicine include:</p>
+                    <ul class="left-side">
                         <li>Integrative medicine consultations to develop a wellness plan that may include nutrition, dietary supplements, and complementary approaches, taking into consideration your cancer treatment plan</li> 
-                        <li>Therapies including massage, craniosacral therapies, and manual lymphatic drainage.</li> 
+                        <li>Therapies including massage, craniosacral therapies, and manual lymphatic drainage</li> 
                         <li>Traditional Chinese medicine/acupuncture</li> 
                         <li>Energy therapies such as Reiki and Healing Touch</li> 
                         <li>Mind-body therapies such as relaxation therapies, biofeedback, guided imagery, and cognitive-behavioral therapy with trained health psychologists</li>
                     </ul>                    
-                    <p>To learn more, <a (click)="logWebsite('https://ocim.nm.org/?utm_source=nim-nm-org&utm_medium=301re&utm_campaign=integrativemedicine')" href="https://ocim.nm.org/?utm_source=nim-nm-org&utm_medium=301re&utm_campaign=integrativemedicine" target="_blank">click here</a>.</p>
-                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                    <p class="detail-pera">To learn more, <a (click)="logWebsite('https://ocim.nm.org/?utm_source=nim-nm-org&utm_medium=301re&utm_campaign=integrativemedicine')" href="https://ocim.nm.org/?utm_source=nim-nm-org&utm_medium=301re&utm_campaign=integrativemedicine" target="_blank">click here</a>.</p>
+                    <img src="assets/img/IntegrativeCare_B.jpg" class="mt-20" width="100%" />
                 </div>   
             </div> 
             <div class="col-md-3 col-sm-12">  

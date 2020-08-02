@@ -6,7 +6,7 @@
             <li class="breadcrumb-item d-none"><a href="#">...</a></li>
             <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
             <li class="breadcrumb-item"><a href="#/patient-resources/diet-nutrition">Diet & Nutrition</a></li>
-            <li class="breadcrumb-item active mob-hidden" aria-current="page">Nutrition tips:</li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Nutrition Tips</li>
             </ol>
         </nav>
         <div class="detail-library">
@@ -14,58 +14,62 @@
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
                         <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
-                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                        <a (click)= "logPDF('nutrition-tips.pdf')" href="assets/pdf/nutrition-tips.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a>
                     </div>
-                    <h2>Nutrition tips: </h2>
+                    <h2>Nutrition Tips</h2>
                     <span>Listen to the full audio of this page below</span>
                     <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
-
-                    <p class="detail-pera pt-pb">In this section, you'll learn about other tips to incorporate in your life to maintain a healthy diet.</p>
-                    <p class="">Nutrition tips: </p>
+                    <br><br>
+                    <p class="detail-pera">In this section, you'll learn about other tips to incorporate in your life to maintain a healthy diet.</p>
+                    <p class="detail-pera">Nutrition tips: </p>
                     <p class="bold-text pt-pb">Alternatives to Frying</p>
-                    <ul class="left-side font-14">
+                    <ul class="left-side">
                         <li>Try baking, grilling, or broiling instead of frying meat or vegetables.</li>
-                        <li>Use fresh herbs, spices, lemon or vinegar for seasoning meats and vegetables.</li>
+                        <li>Use fresh herbs, spices, lemon, or vinegar for seasoning meats and vegetables.</li>
                         <li>Use vegetable oil such as canola oil or olive oil.</li> 
                     </ul>
                     <p class="bold-text pt-pb">Healthy Sauces</p>
-                    <ul class="left-side font-14">
+                    <ul class="left-side">
                         <li>Limit the amount of oil and, if needed, use no more than 1 to 2 teaspoons of olive oil.</li>
                         <li>Make cream base sauces with reduced fat milk or fat free cream.</li>
                         <li>Use tomato base sauces and flavor them with fresh herbs, hot peppers, green peppers, garlic, or cilantro, instead of oil.</li>
                     </ul>
                     <p class="bold-text pt-pb">Reducing Fat Intake</p>
-                    <ul class="left-side font-14">
-                        <li>Trim the fat from the meat, and throw it away before preparing meat (beef, lamb or pork).</li>
+                    <ul class="left-side">
+                        <li>Trim the fat from the meat, and throw it away before preparing meat (beef, lamb, or pork).</li>
                         <li>Choose extra lean cuts.</li>
                         <li>Refrigerate soups or stews after cooking, then spoon the hard fat that’s on top after a couple of hours.</li>
                         <li>Switch whole milk to reduced fat or fat free milk.</li>
                         <li>Go easy on salty snacks, as they are usually higher in fat.</li>
                     </ul>
                     <p class="bold-text pt-pb">Eat Vegetables with Every Meal</p>
-                    <ul class="left-side font-14">
+                    <ul class="left-side">
                         <li>Try part starch, part root vegetables such as yucca, pumpkin, squash, sweet potatoes, and carrots because they're an excellent source of fiber and complex carbohydrates.</li>
                         <li>Avoid boiling vegetables for an extended period as this depletes these vegetables of their nutrients.</li>
                     </ul>
                     <p class="bold-text pt-pb">Remember Portion Control</p>
-                    <ul class="left-side font-14">
+                    <ul class="left-side">
                         <li>Check your servings and try to eat half of a hearty portion. A serving of meat the size of your palm is plenty. Fill up instead on grilled vegetables.</li>
                         <li>Serve from the kitchen, instead of placing all the foods on the table.</li>
                         <li>Make the person who requests seconds serve themselves.</li>
                     </ul>
-                    <img src="assets/img/nutrition.jpg" width="100%">                 
+                    <img src="assets/img/Nutrition Tips_B.jpg" class="mt-20" width="100%">                 
                        
                 </div>   
             </div> 
             <div class="col-md-3 col-sm-12">  
                 <div class="check-detail pb-0 border-top">
                     <p class="semibold-text light-height">All Diet & Nutrition Resources</p> 
-                    <ul class="right-side-list mt-20"> 
+                    <ul class="right-side-list mt-20">
+                        <!--
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/balanced-diet'">Maintaining a Balanced Diet</a></li>
+                        <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-eating'">Importance of Healthy Eating</a></li>
+                        -->     
                         <li><a [routerLink]="'/patient-resources/diet-nutrition/healthy-foods'">Healthy Foods</a></li>
                         <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-gain'">Managing Weight Gain</a></li> 
                         <li><a [routerLink]="'/patient-resources/diet-nutrition/weight-loss'">Managing Weight Loss</a></li>
                         <li><a [routerLink]="'/patient-resources/diet-nutrition/loss-of-appetite'">Dealing with a Loss of Appetite</a></li>
-                        <li class="active" ><a [routerLink]="'/patient-resources/diet-nutrition/nutrition-tips'">Nutrition </a></li><br><br>
+                        <li class="active" ><a [routerLink]="'/patient-resources/diet-nutrition/nutrition-tips'">Nutrition Tips</a></li><br><br>
                         <li><a [routerLink]="'/patient-resources/diet-nutrition'"> < BACK TO PATIENT RESOURCES </a></li>
                     </ul>
                 </div>

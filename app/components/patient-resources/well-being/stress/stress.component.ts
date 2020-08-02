@@ -25,9 +25,14 @@ export class StressComponent implements OnInit {
     timedSegment.topic = "Resource Stress";
     this.redcapService.setTimedSegment(timedSegment);
 
-    var iframeElement   = document.querySelector('iframe');
-    var iframeElementID = iframeElement.id;
-    var widget1         = SC.Widget(iframeElement);
+
+    var iframeElements   = document.querySelectorAll('iframe');
+
+
+    //var iframeElementID = iframeElement.id;
+    var widget1 = SC.Widget(iframeElements[0]);
+    var widget2 = SC.Widget(iframeElements[1]);
+    var widget3 = SC.Widget(iframeElements[2]);
 
     var localSvc = this.redcapService;
 
@@ -37,6 +42,18 @@ export class StressComponent implements OnInit {
       });
     });
 
+    widget2.bind(SC.Widget.Events.PLAY, function(e) {      
+      widget1.getCurrentSound(function(currentSound) {
+        localSvc.logWebsite(timedSegment,currentSound.permalink,"sound file").subscribe( res => {});
+      });
+    });
+
+    widget3.bind(SC.Widget.Events.PLAY, function(e) {      
+      widget1.getCurrentSound(function(currentSound) {
+        localSvc.logWebsite(timedSegment,currentSound.permalink,"sound file").subscribe( res => {});
+      });
+    });   
+
     this.checkFavorite();
 
   }
@@ -45,14 +62,23 @@ export class StressComponent implements OnInit {
     let timedSegment = this.redcapService.getTimedSegment();
     this.redcapService.logWebsite(timedSegment, site, "website").subscribe( res => {});
   }
-  
+
+  logPDF(doc:string){
+    let timedSegment = this.redcapService.getTimedSegment();
+    this.redcapService.logWebsite(timedSegment, doc, "pdf").subscribe( res => {});
+  }
+    
   checkFavorite(){
     let timedSegment = this.redcapService.getTimedSegment();
     this.redcapService.getFavorites(timedSegment.user).subscribe( res => {
+
+      if(res.length > 0){
       if(res.filter(card => card == this.label).length > 0){
         console.log("found: " + this.label);
         this.isFav = true;
       }
+      }
+
     });
   }
 

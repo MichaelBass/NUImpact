@@ -4,149 +4,105 @@
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Dashboard</a></li>
               <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Symptom Library</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Depression</li>
+            <li class="breadcrumb-item active" aria-current="page">Sadness</li>
             </ol>
         </nav>
         <div class="detail-library">
             <div class="col-md-8 col-sm-12">
                 <div class="check-detail"> 
-                    <h2>Depression</h2>
+                    <h2>Sadness</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-depression.pdf')" href="assets/pdf/symptom-library-depression.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a> 
+                    </div>                    
                     <span>Listen to the full audio of this page below</span>
                     <img src="assets/img/stript.png" class="d-none" width="100%" />
                      <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
                     <br> <br>
-                    <p class="detail-pera">Cancer or cancer treatment may cause fatigue. This fatigue feels like persistent physical, emotional, and mental exhaustion. It is different than feeling tired after not getting enough rest.</p>
+                    <p class="detail-pera">Some people say that they experience sadness or even depression during or after cancer. Some may feel a sense of loss of their health, and the life they had before cancer. After treatment, you may still feel sad and this is normal. It may take time to accept all the changes that happened to your body, family, and even work life.</p>
+                    <p class="detail-pera">If you have any of the following signs for more than 2 weeks, talk to your doctor about treatment that can help you feel better. Here are common signs of depression:</p>
                     <ul class="left-side">
-                        <li>It interferes with daily life.</li>
-                        <li>It does not match the person’s level of activity.</li>
-                        <li>It does not improve with rest.</li>
-                    </ul><br>
-                    <p class="detail-pera">People who have or had cancer will have fatigue that lasts months or years after finishing treatment. People with cancer, especially those who are older, may have other health conditions including heart disease, arthritis, reduced lung or kidney function, etc., that may impact energy level. If you experience fatigue, talk with your health care team. Share any new symptoms or changes in symptoms.</p><br>
-
-                    <p class="semibold-text">Medical Conditions that contribute to your fatigue may include the following:</p><br>
+                        <li>Feelings of sadness that don't go away</li>
+                        <li>Having a sense of guilt or feeling unworthy</li>
+                        <li>Feeling helpless or hopeless, as if life has no meaning</li>
+                        <li>Crying for long periods of time or many times each day</li>
+                        <li>Feeling extremely tired (fatigue)</li>
+                        <li>Wanting to avoid social situations</li>
+                        <li>Finding it hard to enjoy everyday things, such as food or being with family and friends</li>
+                        <li>Thinking about hurting yourself</li>
+                    </ul>
+                    <p class="detail-pera">Common cause of depression may include:</p>
                     <ul class="left-side">
-                        <li>Living with constant pain is often exhausting and many medicines prescribed for pain cause drowsiness and fatigue.</li>
-                        <li>Depression, anxiety, and stress can increase exhaustion and complicate treatment.</li>
-                        <li>Insomnia, having trouble falling a sleep or staying a sleep. Some medicines disturb normal sleep patterns.</li>
-                        <li>Poor.</li>
-                        <li>Anemia, can be common in cancer patients, is a decrease in the amount of red blood cells you have. Patients with anemia may feel extreme and overwhelming fatigue.</li>
+                        <li>Learning you have cancer</li>
+                        <li>Family history of depression</li>
+                        <li>Medical conditions: Abnormal levels of calcium, sodium, or potassium in the blood, anemia</li>
+                        <li>Side-effects caused by certain medicines</li>
+                        <li>Stress caused by life events other than cancer</li>
                     </ul>
                     <br>    
-                    <p class="semibold-text">Certain treatment types contribute to fatigue. For example, people commonly experience fatigue at these times:</p><br>
+                    <p class="semibold-text pt-pb">Self-care Strategies</p>
+                    <p class="detail-pera">Here are some strategies to try at home that you can try to incorporate in your life to ease the symptoms of depression:</p>
                     <ul class="left-side">
-                        <li>A few days after chemotherapy</li>
-                        <li>A few weeks after beginning radiation therapy</li>
-                        <li>After immunotherapy.</li>
+                        <li>Avoid drinking alcohol.</li>
+                        <li>Exercise can improve mood. Exercise several times a week. Start by exercising for 10 minutes 2-3 times per week, and then add 5-10 minutes to your exercise sessions each week. Always check with your doctor before starting a new exercise program.</li> 
+                        <li>Expressing or sharing feelings like sadness with others can be helpful. Talk to trusted family and/or friends about how you are feeling.</li>
+                        <li>Be sure to make time for yourself each day to do things that make you feel happy. Even if you are feeling sad, it’s important to keep doing some of the activities you find fun. These activities might help improve your mood.</li> 
+                        <li>Join a support group and talk to people who have been through the same cancer treatment as you. Some people find support groups to be helpful as they can meet and relate to other cancer survivors who share similar experiences.</li> 
+                        <li>Write down your feelings or worries in a diary or journal. Writing down your feelings can help you to feel better.</li>
+                        <li>Try relaxation exercises and deep breathing.</li>
+                        <li>Use meditation, prayer, or other types of spiritual support.</li>
+                        <li>Ask your doctor for a referral to see a licensed mental health care provider.</li> 
                     </ul><br>
                     
-                    <p class="semibold-text">Strategies to Try at Home</p><br>
-                    <p>If you experience fatigue, try the following tips: </p><br><p>Rest, but not too much.</p>
-                    <ul class="left-side">
-                        <li>Plan your day so you have time to rest between activities.</li>
-                        <li>Take short naps or rest breaks (less than an hour). Longer naps can lower your energy level and make
-it harder to sleep at night.</li>
-                        <li>Try to sleep 7-8 hours each night, and go to sleep and wake up at the same time each day. Having
-a regular sleep schedule helps you get enough sleep at night.</li>
-                    </ul><br>
+                    <p class="semibold-text pt-pb">How Your Care Team can Help</p>
+                    <p class="detail-pera">If you are feeling depressed, mention this to your doctor. Remember, getting the help you need is important for your health. Getting treatment for depression can also improve your daily activities, make you more productive at work, and improve the time you spend with your family and friends. Treatment will also help foster more positive thinking that will eventually replace negative thoughts as you continue to improve. Antidepressant medications work by increasing the amount of chemicals in the brain that regulate mood. The primary chemicals in the brain that regulate mood are serotonin, dopamine, and norepinephrine.  There are several types of antidepressant medications that are effective in treating depression occurring along with cancer. Antidepressants generally take between 2-4 weeks to begin relieving symptoms of depression.</p>
                     
-                    <p>Stay active.</p>
+                    <p class="detail-pera">Selective Serotonin Reuptake Inhibitors (SSRIs)</p>
                     <ul class="left-side">
-                        <li>Regular exercise, especially walking, is a good way to ease fatigue. It may also help you sleep better.</li>
-                        <li>Try a new exercise such as swimming or even dancing. Remember to check with your doctor before
-starting a new type of exercise.</li>
-                        <li>Multiple short sessions (5-10) minutes of exercising throughout the day can help keep energy levels
-up and prevent exhaustion.</li>
-                        <li>Start by exercising for 10 minutes 1-3 times per week, and then add 5-10 minutes to your exercise
-sessions each week to gradually reach the physical activity recommendations of 150 minutes per week.</li>
-                    </ul><br>
-                    
-                    <p>Save your energy.</p>
-                    <ul class="left-side">
-                        <li>Each day, prioritize. Decide which activities are the most important to you, and focus on those.</li>
-                        <li>Ask friends and family for help with things you find too tiring or hard to do. This could include preparing meals, doing housework, or running errands.</li>
-                        <li>Don’t push yourself by standing too long. Even long, hot showers or baths can drain your energy. Sit when
-you can, and rest in between activities.</li>
-                    </ul><br>
-                    
-                    <p>Think about joining a support group</p>
-                    <ul class="left-side">
-                        <li>Talking about your fatigue with other people who have the same problem can be helpful.</li>
+                        <li>SSRIs allow the body to build up serotonin levels to improve mood.</li>
+                        <li>Types of SSRIs boost norepinephrine and serotonin</li>
                     </ul>
-                    
-                    <p>Dietary Tips to Manage Fatigue:</p><br>
-                    <p>Like many other side effects, you can manage fatigue to some extent through managing your diet. This includes staying hydrated by drinking 8-10 8-ounce glasses of non-caffeinated liquids each day. Another way to fight fatigue is to eat foods high in iron.</p><br>
-                    
-                    <p class="semibold-text">High iron food sources:</p>
-                    
-                    <div class="col-md-6 pl-pr-0">
-                        <div class="stript-box">
-                            Animal Sources
-                        </div>
-                        <p class="mt-mb">Cuttlefish;  Oysters;  Mussels;  Crab;  Clams;  Beef;  Lamb;  Anchovy; Chicken;  Turkey;  Pork;  Eggs;  Salmon;  Scallops;  Shrimp </p>
-                    </div>
-                    <div class="col-md-6 pl-pr-0">
-                        <div class="stript-box">
-                            Non-Animal Sources
-                        </div>
-                        <p class="mt-mb">Certain cereals, including Grapenuts®, Multigrain Cheerios®, Cream of Wheat®, and Fiber One®;  Sesame seeds;  Dried apricots;  Lima, kidney or black beans;  Mixed nuts;  Walnuts;  Sunflower seeds;  Cooked spinach;  Dark chocolate;  Raisins;  Dried figs;  Chick peas;  Wheat Bread;  Molasses;</p>                    
-                    </div><br>
-                    <p class="semibold-text">How Your Care Team can Help</p><br>  
-                        <p>Fatigue in cancer patients is often treated by relieving related conditions such as:</p>
-                        <ul>
-                            <li>Treatment of anemia</li>
-                            <li>Treatment of pain</li>
-                            <li>Treatment of depression</li>
-                        </ul><br>
-                        
-                        <p>Treating anemia may help decrease fatigue. When known, the cause of the anemia is treated. When the cause is not known, treatment for anemia is supportive care and may include the following:</p>
-                        <ul>
-                            <li>Transfusions of red blood cells works well to treat anemia.</li>
-                        </ul><br>
-                        
-                        <p>Side effects of transfusions include an allergic reaction, infection, graft-versus-host disease, immune system changes, and too much iron in the blood.</p>
-                        <ul>
-                            <li>Epoetin alfa and darbepoetin alfa are two of drugs that cause the bone marrow to make more red blood
-cells. This may be used to treat anemia-related fatigue in patients receiving chemotherapy.Side effects of these drugs are it may shorten survival time, increase the risk of serious heart problems,and cause some tumors to grow faster or recur. Discuss the risks and benefits of these drugs with your doctor.</li>
-                        </ul>
-                        <br>
-                        <p>If pain is making fatigue worse, the patient’s pain medicine may be changed or the dose may be increased. If too much pain medicine is making fatigue worse, the patient’s pain medicine may be changed or the dose may be decreased. See the section on “Pain-How Your Care Team can Help ” to learn more about the different pain medications that a doctor can prescribe.</p><br>
-                        
-                        <p>Fatigue in patients who have depression may be treated with antidepressant drugs.</p>
-                        <ul class="left-side">
-                            <li>Psychostimulant drugs may help some patients have more energy and a better mood, and help them think and concentrate.</li>
-                        </ul>
-                         <br>
-                        <p>Side effects of psychostimulants include trouble sleeping, nightmares, serious heart problems, mood changes, anxiety, and nausea.</p>
-                        <br> 
-                        <p>To learn more about fatigue click on the links below:</p><br>
-                        
-                        <div class="col-md-9">
-                            <img src="assets/img/ico1.png" class="pull-left left-img" />
-                            <p class="semibold-text">Lorem ipsum dolor</p>
-                            <p>Cras lorem dui, imperdiet at mi ac, facilisis pretium orci.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <button class="btn-secondary" type="submit">Play Video</button>
-                        </div>
-                        
-                        <div class="col-md-9">
-                            <img src="assets/img/ico2.png" class="pull-left left-img" />
-                            <p class="semibold-text">Lorem ipsum dolor</p>
-                            <p>Cras lorem dui, imperdiet at mi ac, facilisis pretium orci.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <button class="btn-secondary" type="submit">read article</button>
-                        </div>
-                    
-                        <div class="col-md-9">
-                            <img src="assets/img/ico3.png" class="pull-left left-img" />
-                            <p class="semibold-text">Lorem ipsum dolor</p>
-                            <p>Cras lorem dui, imperdiet at mi ac, facilisis pretium orci.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <button class="btn-secondary" type="submit">view website</button>
-                            <span class="border"></span>
-                        </div>
+                    <p class="detail-pera">Serotonin Norepinephrine Reuptake Inhibitors (SNRIs)</p>
+                    <ul class="left-side">
+                        <li>SNRIs boost norepinephrine and serotonin.</li>
+                        <li>Types of SNRIs include Effexor, Cymbalta</li>
+                    </ul>                    
+                    <p class="detail-pera">Serotonin Antagonist Reuptake Inhibitors (SARIs)</p>
+                    <ul class="left-side">
+                        <li>SARIs also work by increasing levels of serotonin.</li>
+                        <li>Types of SARIs include Serzones and Desyrel</li>
+                    </ul>
+                    <p class="detail-pera">Tricyclics</p>
+                    <ul class="left-side">
+                        <li>Tricyclics are the oldest type of antidepressant; thought to increase serotonin and norepinephrine.</li>
+                        <li>Types of tricyclics include: Elavil, Tofranil, Pamelor, Norpramin, Anafranil and others</li>
+                    </ul>                    
+                    <p class="detail-pera">Monamine Oxidase Inhibitors (MAOIs)</p>
+                    <ul class="left-side">
+                        <li>MAOIs rarely used in cancer because this type of drug often interacts with other drugs and foods.</li>
+                        <li>Types MAOIs include: Nardil and Parnate</li>
+                    </ul>
+                    <p class="detail-pera">Noradrenergic Specific Serotonergic Antidepressant (NaSSA)</p>
+                    <ul class="left-side">
+                        <li>NaSSAs are new and show promise for treating depression, anxiety, and insomnia.</li>
+                        <li>One type of NaSSA is Remeron</li>
+                    </ul>
+                    <p class="detail-pera">Norepinephrine Dopamine Reuptake Inhibitors (NDRI)</p>
+                    <ul class="left-side">
+                        <li>NDRIs are good option for people who do not respond to SSRIs, who experience side effects, or who are concerned about sexual problems.</li>
+                        <li>One type of NDRI is Wellbutrin</li>
+                    </ul>
+                    <p class="detail-pera">Stimulants</p>
+                    <ul class="left-side">
+                        <li>In special cases, low doses of stimulants can be used to treat depression in cancer patients. These may be used when standard antidepressants produce side effects that are too difficult to tolerate.</li>
+                        <li>Can provide a sense of well-being, decrease fatigue, and increase appetite.  Can be helpful in managing the sedating effect of opioids.</li>
+                        <li>Common drug names: methylphenidate (Ritalin), modafinal (Provigil), dextroamphetamine (Dexedrine)</li>
+                    </ul>
+                    <p class="detail-pera">To learn more about depression click on the links below:</p>
+                     <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.cancer.net/coping-with-cancer/managing-emotions/depression')" href="https://www.cancer.net/coping-with-cancer/managing-emotions/depression" target="_blank">Go to Cancer.Net for more information on depression</a></li>
+                    <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/stress-mood/depression')" href="https://survivorship.cancer.gov/springboard/stress-mood/depression" target="_blank">Go to Spring Beyond Cancer for more information on depression</a></li>
+                    </ul>
+                    <img src="assets/img/Sadness_B.jpg" class="mt-20" width="100%" />
                 </div>
             </div>
             <div class="col-md-3 col-sm-12">  
@@ -155,15 +111,19 @@ cells. This may be used to treat anemia-related fatigue in patients receiving ch
                     <ul class="right-side-list">
                         <li><a href="#/symptom-library-pain">Pain</a></li>
                         <li><a href="#/symptom-library-fatigue">Fatigue</a></li>
-                        <li class="active"><a href="#/symptom-library-depression">Depression</a></li>
+                        <li class="active"><a href="#/symptom-library-depression">Sadness</a></li>
                         <li><a href="#/symptom-library-anxiety">Anxiety</a></li> 
                         <li><a href="#/symptom-library-insomnia">Insomnia</a></li>
                         <li><a href="#/symptom-library-physicalfunction">Physical Function</a></li>
-                        <li><a href="#/symptom-library-nausea">Nausea</a></li>
-                        <li><a href="#/symptom-library-vomiting">Vomiting</a></li>
+                        <li><a href="#/symptom-library-nausea">Nausea & Vomiting</a></li>
+                        <li ><a href="#/symptom-library-sexlife">Changes in Your Sex Life</a></li>
                         <li><a href="#/symptom-library-breath">Shortness of Breath</a></li>
                         <li><a href="#/symptom-library-constipation">Constipation</a></li>
                         <li><a href="#/symptom-library-diarrhea">Diarrhea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Peripheral Neuropathy</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Lymphedema</a></li>
+                        <li><a href="#/symptom-library-mouthsores">Mouth Sores</a></li>
+                        <li><a href="#/symptom-library-skin">Dry, Itchy/Blistery, or Painful Skin</a></li>                  
                     </ul>
                 </div>
             </div> 

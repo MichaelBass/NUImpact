@@ -1,0 +1,82 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Dashboard</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Symptom Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Changes in Your Sex Life</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Changes in Your Sex Life</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-sexlife.pdf')" href="assets/pdf/symptom-library-sexlife.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Listen to the full audio of this page below</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">It's common to have problems with sex because of cancer and its treatment. These problems can result from changes to your body, treatment side effects, and/or emotional issues. Sometimes these changes are just temporary and only during treatment. Common changes that can impact your sex life during and after cancer include:</p>
+                    <ul class="left-side">
+                        <li>Erection problems</li>
+                        <li>Vaginal dryness and other menopausal symptoms</li>
+                        <li>Muscle weakness</li>
+                        <li>Body image concerns</li>
+                        <li>Lower interest in sexual activity</li> 
+                    </ul><br>
+                    <p class="detail-pera">Coping with these changes can be challenging. Yet, over time, most people with cancer learn to adjust to them and move forward. While it may feel awkward to talk about these problems with members of your care team, it's important to seek help in learning how to adapt to these changes.</p><br>
+
+                    <p class="semibold-text pt-pb">Self-care Strategies</p><br>
+                    <ul class="left-side">
+                        <li>Ask your doctor or another member of your care team about any restrictions or precautions related to sexual activity while you are recovering from surgery or receiving other cancer treatments, such as chemotherapy or radiation therapy.</li>
+                        <li>Talk with your care team about short- or long-term changes to your sex life that you should anticipate based on the type of cancer you have or treatment you receive.</li> 
+                        <li>Recognize that physical recovery from cancer and its treatment can take time. Until then, you and your spouse or partner can find new ways to show that you care about each other. This can include touching, holding, hugging, and cuddling.</li>
+                        <li>Try to be aware of your thoughts, since they can affect your sex life. Be proud of your body and give yourself credit for all you have managed through your cancer experience. Focus on the positive and think of things about yourself that make you feel confident and attractive.</li>
+                        <li>Talk with your spouse or partner about your feelings. Let your partner know if you want to have sex or would rather just hug, kiss, and cuddle. He or she may be afraid to have sex with you. Or your partner may be worried about hurting you or think that you're not feeling well. Talk to your partner about any concerns you have about your sex life. Be open about your feelings and stay positive to avoid blame.</li>
+                    </ul>
+                    <br>    
+                    <p class="semibold-text pt-pb">How your Care Team can Help</p><br>
+                    <ul class="left-side">
+                        <li>Talk with a member of your care team about any specific problem that you are experiencing (e.g., erection problems, vaginal dryness, or muscle weakness). There are also surgical options that they can suggest (e.g., breast reconstruction, implants for breast and prostate cancer). They may be able to suggest medicines, over-the-counter products (e.g., lubricants), or exercises that can help.</li>
+                        <li>Your care team can refer you to a special program or a specialist for advice on sex-related questions during and after treatment. Such programs and specialists can include:</li>
+                        <ul class="left-side">
+                        <li>Sexual medicine clinics or sexual health clinics (including the <a (click)="logWebsite('https://sexmedmenopause.nm.org')" href='https://sexmedmenopause.nm.org' target='_blank'>Northwestern Medicine Center for Sexual Medicine & Menopause</a>)</li>
+                        <li>Other kinds of counseling, from a psychologist or social worker</li>
+                        <li>Other medical specialists (e.g., a gynecologist)</li>
+                        </ul>
+                    </ul>
+                    <p class="detail-pera">To learn more about changes in your sex life click on the links below:</p>
+                    <ul class="left-side">
+                    <li>Go to Cancer.Net for more information on how cancer can impact your sex life. For men click <a (click)="logWebsite('https://www.cancer.net/navigating-cancer-care/dating-sex-and-reproduction/sexual-health-and-cancer-treatment-men')" href="https://www.cancer.net/navigating-cancer-care/dating-sex-and-reproduction/sexual-health-and-cancer-treatment-men" target="_blank">here</a> For women click <a (click)="logWebsite('https://www.cancer.net/navigating-cancer-care/dating-sex-and-reproduction/sexual-health-and-cancer-treatment-women')" href="https://www.cancer.net/navigating-cancer-care/dating-sex-and-reproduction/sexual-health-and-cancer-treatment-women" target="_blank">here</a></li>
+                    <li>Go to Springboard Beyond Cancer for more information on how cancer can impact your sex life. For men click <a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/sexual-problems-for-men')" href="https://survivorship.cancer.gov/springboard/symptoms/sexual-problems-for-men" target="_blank">here</a> For women click <a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/sexual-problems-for-women')" href="https://survivorship.cancer.gov/springboard/symptoms/sexual-problems-for-women" target="_blank">here</a></li>
+                    </ul>
+                    <img src="assets/img/ChangesinYourSexLife_B.jpg" class="mt-20" width="100%" />
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">All symptoms</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Pain</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatigue</a></li>
+                        <li><a href="#/symptom-library-depression">Sadness</a></li>
+                        <li><a href="#/symptom-library-anxiety">Anxiety</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnia</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Physical Function</a></li>
+                        <li><a href="#/symptom-library-nausea">Nausea & Vomiting</a></li>
+                        <li class="active"><a href="#/symptom-library-sexlife">Changes in Your Sex Life</a></li>
+                        <li><a href="#/symptom-library-breath">Shortness of Breath</a></li>
+                        <li><a href="#/symptom-library-constipation">Constipation</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrhea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Peripheral Neuropathy</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Lymphedema</a></li>
+                        <li><a href="#/symptom-library-mouthsores">Mouth Sores</a></li>
+                        <li><a href="#/symptom-library-skin">Dry, Itchy/Blistery, or Painful Skin</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

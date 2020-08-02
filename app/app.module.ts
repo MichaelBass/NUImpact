@@ -41,12 +41,15 @@ import { StressComponent } from './components/patient-resources/well-being/stres
 import { SocialComponent } from './components/patient-resources/well-being/social/social.component';
 import { ProblemComponent } from './components/patient-resources/well-being/problem/problem.component';
 import { PhysicalComponent } from './components/patient-resources/well-being/physical/physical.component';
+import { SmokingCessationComponent } from './components/patient-resources/well-being/smokingcessation/smokingcessation.component';
+import { SunProtectionComponent } from './components/patient-resources/well-being/sunprotection/sunprotection.component';
+import { SupportiveComponent } from './components/patient-resources/well-being/supportive/supportive.component';
 
 import { FinancialComponent } from './components/patient-resources/financial/financial/financial.component';
 import { CostComponent } from './components/patient-resources/financial/cost/cost.component';
 import { LegalComponent } from './components/patient-resources/financial/legal/legal.component';
 import { TransportationComponent } from './components/patient-resources/financial/transportation/transportation.component';
-
+import { BodyImageComponent } from './components/patient-resources/financial/bodyimage/bodyimage.component';
 
 import { TreatmentComponent } from './components/patient-resources/treatment/treatment/treatment.component';
 import { IntegrativeComponent } from './components/patient-resources/treatment/integrative/integrative.component';
@@ -68,11 +71,14 @@ import { SymptomLibraryAnxietyComponent } from './components/symptom-library-anx
 import { SymptomLibraryInsomniaComponent } from './components/symptom-library-insomnia/symptom-library-insomnia.component';
 import { SymptomLibraryPhysicalFunctionComponent } from './components/symptom-library-physicalfunction/symptom-library-physicalfunction.component';
 import { SymptomLibraryNauseaComponent } from './components/symptom-library-nausea/symptom-library-nausea.component';
-import { SymptomLibraryVomitingComponent } from './components/symptom-library-vomiting/symptom-library-vomiting.component';
-
+import { SymptomLibraryLymphedemaComponent } from './components/symptom-library-lymphedema/symptom-library-lymphedema.component';
 import { SymptomLibraryBreathComponent } from './components/symptom-library-breath/symptom-library-breath.component';
 import { SymptomLibraryConstipationComponent } from './components/symptom-library-constipation/symptom-library-constipation.component';
 import { SymptomLibraryDiarrheaComponent } from './components/symptom-library-diarrhea/symptom-library-diarrhea.component';
+import { SymptomLibrarySexLifeComponent } from './components/symptom-library-sexlife/symptom-library-sexlife.component';
+import { SymptomLibraryNeuropathyComponent } from './components/symptom-library-neuropathy/symptom-library-neuropathy.component';
+import { SymptomLibraryMouthSoresComponent } from './components/symptom-library-mouthsores/symptom-library-mouthsores.component';
+import { SymptomLibrarySkinComponent } from './components/symptom-library-skin/symptom-library-skin.component';
 
 
 @NgModule({
@@ -109,10 +115,14 @@ import { SymptomLibraryDiarrheaComponent } from './components/symptom-library-di
     SocialComponent,
     StressComponent,
     TalkingComponent,
+    SmokingCessationComponent,
+    SunProtectionComponent,
+    SupportiveComponent,
     FinancialComponent,
     CostComponent,
     LegalComponent,
     TransportationComponent,
+    BodyImageComponent,
     TreatmentComponent,
     IntegrativeComponent,
     PalliativeComponent,
@@ -125,10 +135,14 @@ import { SymptomLibraryDiarrheaComponent } from './components/symptom-library-di
     SymptomLibraryInsomniaComponent,
     SymptomLibraryPhysicalFunctionComponent,
     SymptomLibraryNauseaComponent,
-    SymptomLibraryVomitingComponent,
+    SymptomLibraryLymphedemaComponent,
     SymptomLibraryBreathComponent,
     SymptomLibraryConstipationComponent,
-    SymptomLibraryDiarrheaComponent
+    SymptomLibraryDiarrheaComponent,
+    SymptomLibrarySexLifeComponent,
+    SymptomLibraryNeuropathyComponent,
+    SymptomLibraryMouthSoresComponent,
+    SymptomLibrarySkinComponent  
   ],
   imports: [
     FormsModule,

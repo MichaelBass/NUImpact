@@ -18,7 +18,17 @@ export class SymptomLibraryInsomniaComponent implements OnInit {
 	    timedSegment.topic = "SymptomLibrary Insomnia";
 	    this.redcapService.setTimedSegment(timedSegment);
 	  }
-		
+
+	  logWebsite(site:string){
+	    let timedSegment = this.redcapService.getTimedSegment();
+	    this.redcapService.logWebsite(timedSegment, site, "website").subscribe( res => {});
+	  }
+
+	  logPDF(doc:string){
+	    let timedSegment = this.redcapService.getTimedSegment();
+	    this.redcapService.logWebsite(timedSegment, doc, "pdf").subscribe( res => {});
+	  }	
+	   	  		
 	dismiss(){
 	this.isWarn = false;
 	}

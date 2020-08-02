@@ -1,0 +1,74 @@
+<div id="healthy-foods" class="">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item d-none"><a href="#">...</a></li>
+              <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/well-being">Enhancing Well-Being</a></li>
+            <li class="breadcrumb-item active mob-hidden" aria-current="page">Supportive Oncology and Palliative Care</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail pt-0">
+                    <div class="foods-btn">
+                        <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
+                        <a (click)= "logPDF('supportive.pdf')" href="assets/pdf/supportive.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a>
+                    </div>
+                    <h2>Supportive Oncology and Palliative Care</h2>
+                    <span>Listen to the full audio of this page below</span>
+                    <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br><br>
+                    <p class="detail-pera">A group of health care providers is ready to enhance and manage your treatment experience. This health care team provides outpatient services and helpful resources to support you during and after treatment for cancer.</p>
+                    <p class="bold-text pt-pb">What is Supportive Oncology?</p>
+                    <p class="detail-pera">At Northwestern Medicine (NM) supportive oncology is a type of care/service that provides support for patients and their loved ones from the moment of diagnosis through treatment and recovery. The multidisciplinary team at NM is dedicated to listening and responding to emotional and practical concerns relating to treatment, such as transportation and finance.</p>
+                    <p class="bold-text  pt-pb">Resources that the Supportive Oncology Team can Provide</p> 
+                    <ul class="left-side">
+                        <li>Clinical Psychologists</li>
+                        <li>Supportive Oncology Education provides information on diagnosis, treatment options, support groups, clinical trials, and more.</li> 
+                        <li>Fertility Preservation</li>
+                        <li>Nutrition Services</li>
+                        <li>Nurse Navigators</li>
+                        <li>Psychiatry Teams</li>
+                        <li>Social Workers</li>
+                        <li>Financial Counseling</li>
+                        <li>Locations to Wig & Beauty Boutiques</li>
+                        <li>Health Learning Center</li>
+                        <li>Support Groups</li>
+                    </ul> 
+
+                    <a (click)="logWebsite('https://www.nm.org/conditions-and-care-areas/cancer-care/cancer-support-services')" href="https://www.nm.org/conditions-and-care-areas/cancer-care/cancer-support-services" target="_blank">Services Available at Northwestern Medicine</a>
+                    <p class="bold-text pt-pb">What is Palliative Care?</p>
+                    <p class="detail-pera">Palliative care, also known as palliative medicine, is about improving quality of life, providing an extra layer of support, and having a team focus on patient care when facing serious illness.</p> 
+                    <p class="bold-text pt-pb">Palliative Care Services</p>
+                    <p class="detail-pera">Palliative care services aim to improve quality of life by relieving the symptoms associated with serious illnesses. It can begin at any stage of a life-altering illness to help people:</p>
+                    <ul class="left-side">
+                        <li>Live with illness,</li> 
+                        <li>Mange the effects of treatment,</li>
+                        <li>Find ways to handle day-to-day challenges, and</li> 
+                        <li>Shift medical approach from crisis intervention to crisis prevention.</li>
+                    </ul>
+                    <img src="assets/img/SupportiveOncologyandPalliativeCare_B.jpg" class="mt-20" width="100%" />
+                </div>   
+            </div> 
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail pb-0 border-top">
+                    <p class="semibold-text light-height">Treatment Symptom Management</p> 
+                    <ul class="right-side-list mt-20"> 
+                        <li><a [routerLink]="'/patient-resources/well-being/talking'">Talking with Your Health Care Team</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/social'">Social Support</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/stress'">Stress Management</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/physical'">Physical Activity</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/problem'">Problem Solving</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/smokingcessation'">Smoking Cessation and Substance Abuse</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/sunprotection'">Sun Protection</a></li>
+                        <li class="active" ><a [routerLink]="'/patient-resources/well-being/supportive'">Supportive Oncology and Palliative Care</a></li>
+                        <br><br>
+                        <li><a [routerLink]="'/patient-resources/well-being'"> < BACK TO Enhancing Well-Being</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

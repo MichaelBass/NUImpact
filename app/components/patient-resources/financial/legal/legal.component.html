@@ -5,7 +5,7 @@
             <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
               <li class="breadcrumb-item d-none"><a href="#">...</a></li>
               <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
-              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Financial Resources</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Financial & Practical Matters</a></li>
             <li class="breadcrumb-item active mob-hidden" aria-current="page">Legal and Workplace Issues</li>
             </ol>
         </nav>
@@ -14,30 +14,31 @@
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
                         <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
-                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                        <a (click)= "logPDF('legal.pdf')" href="assets/pdf/legal.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Legal and Workplace Issues</h2>
                     <span>Listen to the full audio of this page below</span>
                     <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
-
-                    <p class="detail-pera pt-pb">People living with cancer often have questions about maintaining employment during treatment, accessing insurance and government benefits, and other legal topics. Help is available at no cost.</p>
-                    <p>National, non-profit organizations provide free information and counseling for people living with cancer who may be having difficulty with issues related to employment, insurance, medical leave, estate planning, and other legal issues. Here are a few:</p>
-                    <ul class="left-side font-14 mt-30">
+                    <br><br>
+                    <p class="detail-pera">People living with cancer often have questions about maintaining employment during treatment, accessing insurance and government benefits, and other legal topics. Help is available at no cost.</p>
+                    <p class="detail-pera">National, non-profit organizations provide free information and counseling for people living with cancer who may be having difficulty with issues related to employment, insurance, medical leave, estate planning, and other legal issues. Here are a few:</p>
+                    <ul class="left-side">
                         <li><a (click)="logWebsite('https://www.patientadvocate.org')" href='https://www.patientadvocate.org' target='_blank'>Patient Advocate Foundation</a> (800-532-5274) provides education, legal counseling, and referrals for people with cancer who need assistance managing insurance, financial, debt crisis, and job discrimination issues. It also provides co-pay assistance and financial aid for eligible patients.</li>
                         <li><a (click)="logWebsite('https://thedrlc.org/cancer')" href='https://thedrlc.org/cancer' target='_blank'>Cancer Legal Resource Center</a> (866.843.2572) provides information through its national telephone assistance line, outreach programs and community activities to educate and to support cancer patients, their families, healthcare professionals and advocates on matters like maintaining employment through treatment, accessing healthcare and government benefits, taking medical leave and estate planning.</li> 
                         <li><a (click)="logWebsite('https://www.cancerandcareers.org/en')" href='https://www.cancerandcareers.org/en' target='_blank'>Cancer and Careers</a> provides career coaching, tools and resources to empower people with cancer to thrive in their workplace</li>
                     </ul>                    
-                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                    <img src="assets/img/ManagingLegalWorkplaceIssues_B.jpg" class="mt-20" width="100%" />
                 </div>   
             </div> 
             <div class="col-md-3 col-sm-12">  
                 <div class="check-detail pb-0 border-top">
-                    <p class="semibold-text light-height">Financial Resources</p> 
+                    <p class="semibold-text light-height">Financial & Practical Matters</p> 
                     <ul class="right-side-list mt-20"> 
                         <li><a [routerLink]="'/patient-resources/financial/cost'">Managing the Cost of Treatment</a></li>
                         <li class="active" ><a [routerLink]="'/patient-resources/financial/legal'">Legal and Workplace Issues</a></li>
-                        <li><a [routerLink]="'/patient-resources/financial/transportation'">Managing Transportation and Other Concerns</a></li><br><br>
-                        <li><a [routerLink]="'/patient-resources/financial'"> < BACK TO Financial Resources</a></li>
+                        <li><a [routerLink]="'/patient-resources/financial/transportation'">Managing Transportation and Other Concerns</a></li>
+                        <li><a [routerLink]="'/patient-resources/financial/bodyimage'">Managing Hair Loss and Body Image Concerns</a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/financial'"> < BACK TO Financial & Practical Matters</a></li>
                     </ul>
                 </div>
             </div> 

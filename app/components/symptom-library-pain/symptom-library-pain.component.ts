@@ -23,4 +23,14 @@ export class SymptomLibraryPainComponent implements OnInit {
 	this.isWarn = false;
 	}
 
+	  logPDF(doc:string){
+	    let timedSegment = this.redcapService.getTimedSegment();
+	    this.redcapService.logWebsite(timedSegment, doc, "pdf").subscribe( res => {});
+	  }	
+	   
+  logWebsite(site:string){
+    let timedSegment = this.redcapService.getTimedSegment();
+    this.redcapService.logWebsite(timedSegment, site, "website").subscribe( res => {});
+  }
+  
 }

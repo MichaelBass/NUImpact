@@ -10,13 +10,16 @@
         <div class="detail-library">
             <div class="col-md-8 col-sm-12">
                 <div class="check-detail"> 
-                    <h2>Anxiety</h2>
+                    <h2>Anxiety</h2> 
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-anxiety.pdf')" href="assets/pdf/symptom-library-anxiety.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a> 
+                    </div>
                     <span>Listen to the full audio of this page below</span>
                     <img src="assets/img/stript.png" class="d-none" width="100%" />
-                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
                     <br> <br>
                     <p class="detail-pera">Anxiety is common among patients and families who are coping with cancer. However, it's important to manage anxiety if it becomes overwhelming or gets in the way of your ability to manage your day-to-day life. Sometimes anxiety can cause patients to miss check-ups with their doctors or delay treatment.</p>
-                    <p class="etail-pera">Anxiety means you have extra worry, can't relax, and feel tense or nervous. You may notice that:</p>
+                    <p class="detail-pera">Anxiety means you have extra worry, can't relax, and feel tense or nervous. You may notice that:</p>
                     <ul class="left-side">
                         <li>Your heart beats faster</li>
                         <li>Your hands feel shaky</li>
@@ -27,7 +30,7 @@
                         <li>You're flooded with anxious thoughts or concerns that are difficult to manage</li>
                         <li>You start avoiding social situations or feeling irritable with family and friends</li> 
                     </ul>   
-                    <p class="semibold-text">Common triggers of anxiety may include:</p>
+                    <p class="semibold-text pt-pb">Common triggers of anxiety may include:</p>
                     <ul class="left-side">
                         <li>Being screened for cancer</li>
                         <li>Waiting for test results</li> 
@@ -38,8 +41,8 @@
                         <li>Withdrawing from habit-forming drugs: Withdrawal from alcohol, nicotine, opioids, or antidepressant medicine can cause agitation or anxiety</li>
                     </ul>
                     <p class="detail-pera"><i>An important thing to remember is that some medical conditions and medicines can feel like anxiety. If you're experiencing symptoms similar to anxiety, talk to your doctor. He or she can help you figure out what’s going on, and what the best treatment approach is for you.</i></p>
-                    <p class="semibold-text">Self-Care Strategies </p>
-                    <p>Listed below are ways to address anxiety through strategies you can try at home:</p>
+                    <p class="semibold-text pt-pb">Self-Care Strategies </p>
+                    <p class="detail-pera">Listed below are ways to address anxiety through strategies you can try at home:</p>
                     <ul class="left-side">
                         <li>Talk about your feelings and fears with someone you trust. Remember, it’s ok and normal to feel anxious.</li> 
                         <li>Consider joining a support group. It may help to share your feelings and concerns with others who understand what you're going through.</li> 
@@ -51,27 +54,16 @@
                         <li>Guided imagery. This technique uses your imagination to direct the mind’s attention on a peaceful scene that generates a sense of calm and safety.</li>
                         <li>Hypnosis may be useful for guided relaxation, intense concentration, and focused attention as a means to relax.</li>
                     </ul>
-                    <p class="semibold-text">How Your Care Team can Help</p>  
-                    <p>If you're feeling anxious, talk with your doctor. Ask your doctor for a referral to see a licensed mental health care provider. There are many effective talk therapy treatments such as cognitive behavioral therapy that have been shown to reduce anxiety.</p>
-                    <p>Your doctor may also discuss the option of taking a  prescription medication to help with how you are feeling. Moderate to severe anxiety may require medication. Conversation with you and your health care providers can determine if medication is right for you. Benzodiazepines are a commonly prescribed type of medication that can reduce anxiety.</p>
-                    <p>To learn more about anxiety click on the links below:</p>
-                    
-                    <div class="col-md-9">
-                        <img src="assets/img/ico3.png" class="pull-left left-img" />
-                        <p class="semibold-text">Net Information on Anxiety</p>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn-secondary" (click)="displayWebsite('https://www.cancer.net/coping-with-cancer/managing-emotions/anxiety')">view website</button>
-                        <span class="border"></span>
-                    </div>
-                    <div class="col-md-9">
-                        <img src="assets/img/ico3.png" class="pull-left left-img" />
-                        <p class="semibold-text">Springboard Beyond Cancer Information on Anxiety</p>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn-secondary" (click)="displayWebsite('https://survivorship.cancer.gov/springboard/stress-mood/anxiety')">view website</button>
-                        <span class="border"></span>
-                    </div>
+                    <p class="semibold-text pt-pb">How Your Care Team can Help</p>  
+                    <p class="detail-pera">If you're feeling anxious, talk with your doctor. Ask your doctor for a referral to see a licensed mental health care provider. There are many effective talk therapy treatments such as cognitive behavioral therapy that have been shown to reduce anxiety.</p>
+                    <p class="detail-pera">Your doctor may also discuss the option of taking a  prescription medication to help with how you are feeling. Moderate to severe anxiety may require medication. Conversation with you and your health care providers can determine if medication is right for you. Benzodiazepines are a commonly prescribed type of medication that can reduce anxiety.</p>
+                    <p class="detail-pera">To learn more about anxiety click on the links below:</p>
+
+                    <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.cancer.net/coping-with-cancer/managing-emotions/anxiety')" href="https://www.cancer.net/coping-with-cancer/managing-emotions/anxiety" target="_blank">Go to Cancer.Net for more information on anxiety</a></li>
+                        <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/stress-mood/anxiety')" href="https://survivorship.cancer.gov/springboard/stress-mood/anxiety" target="_blank">Go to Springboard Beyond Cancer for more information on anxiety</a></li>
+                    </ul>
+                    <img src="assets/img/Anxiety_B.jpg" class="mt-20" width="100%" />                    
                 </div>
             </div>
             <div class="col-md-3 col-sm-12">  
@@ -80,15 +72,19 @@
                     <ul class="right-side-list">
                         <li><a href="#/symptom-library-pain">Pain</a></li>
                         <li><a href="#/symptom-library-fatigue">Fatigue</a></li>
-                        <li><a href="#/symptom-library-depression">Depression</a></li>
+                        <li><a href="#/symptom-library-depression">Sadness</a></li>
                         <li class="active"><a href="#/symptom-library-anxiety">Anxiety</a></li> 
                         <li><a href="#/symptom-library-insomnia">Insomnia</a></li>
                         <li><a href="#/symptom-library-physicalfunction">Physical Function</a></li>
-                        <li><a href="#/symptom-library-nausea">Nausea</a></li>
-                        <li><a href="#/symptom-library-vomiting">Vomiting</a></li>
+                        <li><a href="#/symptom-library-nausea">Nausea & Vomiting</a></li>
+                        <li><a href="#/symptom-library-sexlife">Changes in Your Sex Life</a></li>
                         <li><a href="#/symptom-library-breath">Shortness of Breath</a></li>
                         <li><a href="#/symptom-library-constipation">Constipation</a></li>
                         <li><a href="#/symptom-library-diarrhea">Diarrhea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Peripheral Neuropathy</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Lymphedema</a></li>
+                        <li><a href="#/symptom-library-mouthsores">Mouth Sores</a></li>
+                        <li><a href="#/symptom-library-skin">Dry, Itchy/Blistery, or Painful Skin</a></li>                        
                     </ul>
                 </div>
             </div> 

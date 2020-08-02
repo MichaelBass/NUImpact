@@ -5,7 +5,7 @@
             <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
               <li class="breadcrumb-item d-none"><a href="#">...</a></li>
               <li class="breadcrumb-item mob-hidden"><a href="#/patient-resources">Patient Resources</a></li>
-              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Financial Resources</a></li>
+              <li class="breadcrumb-item"><a href="#/patient-resources/financial">Financial & Practical Matters</a></li>
             <li class="breadcrumb-item active mob-hidden" aria-current="page">Managing the Cost of Treatment</li>
             </ol>
         </nav>
@@ -14,40 +14,41 @@
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
                         <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
-                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                        <a (click)= "logPDF('cost.pdf')" href="assets/pdf/cost.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Managing the Cost of Treatment</h2>
                     <span>Listen to the full audio of this page below</span>
                     <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
-
-                    <p class="detail-pera pt-pb">The cost of cancer care may be a concern if you or family member has been diagnosed with cancer. Resources are available to assist you with managing the cost of care, including medications.</p>
-                    <p class="detail-pera pt-pb">Here is a list of resources for financial assistance. This is not a complete list and access to funds by these programs can open and close without notification. Consult with your medical team and oncology social worker to see if there are more resources available to you.</p>
-                    <p>General Financial Assistance:</p>
-                    <ul class="left-side font-14 mt-30">
-                        <li><b>Northwestern Medicine Financial Assistance</b> (800.423.0523) is available to those who have trouble paying their bills from Northwestern Medicine providers and meet other criteria. Applications are available online or by calling and requesting.</li> 
+                    <br><br>
+                    <p class="detail-pera">The cost of cancer care may be a concern if you or family member has been diagnosed with cancer. Resources are available to assist you with managing the cost of care, including medications.</p>
+                    <p class="detail-pera">Here is a list of resources for financial assistance. This is not a complete list and access to funds by these programs can open and close without notification. Consult with your medical team and oncology social worker to see if there are more resources available to you.</p>
+                    <p class="bold-text pt-pb">General Financial Assistance:</p>
+                    <ul class="left-side">
+                        <li><a (click)="logWebsite('https://www.nm.org/patients-and-visitors/billing-and-insurance/financial-assistance')" href='https://www.nm.org/patients-and-visitors/billing-and-insurance/financial-assistance' target='_blank'>Northwestern Medicine Financial Assistance</a> (800.423.0523) is available to those who have trouble paying their bills from Northwestern Medicine providers and meet other criteria. Applications are available online or by calling and requesting.</li> 
                         <li><a (click)="logWebsite('https://www.cancerfac.org')" href='https://www.cancerfac.org' target='_blank'>Cancer Financial Assistance Coalition</a> (CFAC) is a group of national organizations that provide financial help to patients. CFAC provides a searchable database of financial resources.</li> 
                         <li><a (click)="logWebsite('https://www.cancercare.org')" href='https://www.cancercare.org' target='_blank'>CancerCare</a> (800-813-4673) provides limited financial assistance for co-pays, transportation, home care, and child care. It also provides a list of sources for financial assistance and a database of organizations providing financial or practical help.</li> 
                         <li><a (click)="logWebsite('https://cancerfinances.org')" href='https://cancerfinances.org' target='_blank'>Cancer Finances</a> offers an online-tool to help guide you through some key topics that may impact your financial situation. Whether you're newly diagnosed, or many years past active treatment, this site can help you navigate finances after cancer.</li>
                     </ul>
-                    <p>Medication Assistance:</p>
-                    <ul class="left-side font-14 mt-30">
-                        <li><a (click)="logWebsite('https://tafcares.org')" href='https://tafcares.org' target='_blank'>The Assist Fund</a> (855-845-3663) provides financial support to chronically ill patients with high-cost medications.</li>  
+                    <p class="bold-text pt-pb">Medication Assistance:</p>
+                    <ul class="left-side">
+                        <li><a (click)="logWebsite('https://tafcares.org')" href='https://tafcares.org' target='_blank'>The Assistance Fund</a> (855-845-3663) provides financial support to chronically ill patients with high-cost medications.</li>  
                         <li><a (click)="logWebsite('https://www.mygooddays.org')" href='https://www.mygooddays.org' target='_blank'>Good Days</a> (877-968-7233) provides financial support by covering copays for those with life-altering conditions.</li> 
                         <li><a (click)="logWebsite('https://www.needymeds.org')" href='https://www.needymeds.org' target='_blank'>NeedyMeds.com</a> (800-503-6897) is dedicated to helping people locate assistance programs to help them afford their medications and other healthcare costs.</li>  
                         <li><a (click)="logWebsite('https://medicineassistancetool.org')" href='https://medicineassistancetool.org' target='_blank'>Partnership for Prescription Assistance</a> helps qualifying patients who lack prescription drug coverage obtain the medications they need.</li> 
                         <li><a (click)="logWebsite('https://www.rxhope.com')" href='https://www.rxhope.com' target='_blank'>RxHope.com</a> helps patients obtain free or low-cost prescription medications.</li> 
                     </ul>                    
-                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                    <img src="assets/img/ManagingtheCostofTreatment_B.jpg" class="mt-20" width="100%" />
                 </div>   
             </div> 
             <div class="col-md-3 col-sm-12">  
                 <div class="check-detail pb-0 border-top">
-                    <p class="semibold-text light-height">Financial Resources</p> 
+                    <p class="semibold-text light-height">Financial & Practical Matters</p> 
                     <ul class="right-side-list mt-20"> 
                         <li class="active" ><a [routerLink]="'/patient-resources/financial/cost'">Managing the Cost of Treatment</a></li>
                         <li><a [routerLink]="'/patient-resources/financial/legal'">Legal and Workplace Issues</a></li>
-                        <li><a [routerLink]="'/patient-resources/financial/transportation'">Managing Transportation and Other Concerns</a></li><br><br>
-                        <li><a [routerLink]="'/patient-resources/financial'"> < BACK TO Financial Resources</a></li>
+                        <li><a [routerLink]="'/patient-resources/financial/transportation'">Managing Transportation and Other Concerns</a></li>
+                        <li><a [routerLink]="'/patient-resources/financial/bodyimage'">Managing Hair Loss and Body Image Concerns</a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/financial'"> < BACK TO Financial & Practical Matters</a></li>
                     </ul>
                 </div>
             </div> 

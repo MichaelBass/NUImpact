@@ -21,13 +21,14 @@ export class ProblemComponent implements OnInit {
   ngOnInit() {
   }
   ngAfterContentInit(){
+
     let timedSegment = this.redcapService.getTimedSegment();
     timedSegment.topic = "Resource Problem";
     this.redcapService.setTimedSegment(timedSegment);
 
-    var iframeElement   = document.querySelector('iframe');
-    var iframeElementID = iframeElement.id;
-    var widget1         = SC.Widget(iframeElement);
+    var iframeElement   = document.querySelectorAll('iframe');
+    var widget1         = SC.Widget(iframeElement[0]);
+    var widget2         = SC.Widget(iframeElement[1]);
 
     var localSvc = this.redcapService;
 
@@ -37,6 +38,13 @@ export class ProblemComponent implements OnInit {
       });
     });
 
+    widget2.bind(SC.Widget.Events.PLAY, function(e) {      
+      widget2.getCurrentSound(function(currentSound) {
+        localSvc.logWebsite(timedSegment,currentSound.permalink,"sound file").subscribe( res => {});
+      });
+    });
+
+
     this.checkFavorite();
   }
   
@@ -44,14 +52,23 @@ export class ProblemComponent implements OnInit {
     let timedSegment = this.redcapService.getTimedSegment();
     this.redcapService.logWebsite(timedSegment, site, "website").subscribe( res => {});
   }
-  
+
+  logPDF(doc:string){
+    let timedSegment = this.redcapService.getTimedSegment();
+    this.redcapService.logWebsite(timedSegment, doc, "pdf").subscribe( res => {});
+  }
+    
   checkFavorite(){
     let timedSegment = this.redcapService.getTimedSegment();
     this.redcapService.getFavorites(timedSegment.user).subscribe( res => {
+
+      if(res.length > 0){
       if(res.filter(card => card == this.label).length > 0){
         console.log("found: " + this.label);
         this.isFav = true;
       }
+      }
+
     });
   }
 

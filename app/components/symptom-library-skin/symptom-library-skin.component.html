@@ -1,0 +1,88 @@
+<div id="content-detail" class="content-d">
+    <div class="container mr-150">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="'/dashboard'">Dashboard</a></li>
+              <li class="breadcrumb-item"><a [routerLink]="'/symptom-library'">Symptom Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Dry, Itchy/Blistery, or Painful Skin</li>
+            </ol>
+        </nav>
+        <div class="detail-library">
+            <div class="col-md-8 col-sm-12">
+                <div class="check-detail"> 
+                    <h2>Dry, Itchy/Blistery, or Painful Skin</h2>
+                    <div class="foods-btn">
+                    <a class="foods-btn" (click)= "logPDF('symptom-library-skin.pdf')" href="assets/pdf/symptom-library-skin.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a> 
+                    </div>
+                    <span>Listen to the full audio of this page below</span>
+                    <img src="assets/img/stript.png" class="d-none" width="100%" />
+                     <img src="assets/img/stript-mob.png" class="mob-none" width="100%" />
+                    <br> <br>
+                    <p class="detail-pera">Changes to your skin can occur due to your cancer treatment. Treatments like stem cell transplant, immunotherapy, and chemotherapy can cause severe skin problems. Let your health care team know if you notice any changes to your skin and/or have open sores, which may be sign of an infection.</p>
+                    <p class="semibold-text pt-pb">Self-care Strategies</p>
+                    <p class="detail-pera">Treating Dry and Itchy Skin</p> 
+                    <ul class="left-side">
+                        <li>After you take a shower, put on moisturizers while your skin is still damp.</li>
+                        <li>Apply moisturizing cream at least twice a day.</li> 
+                        <li>Take a warm bath/shower. Don’t take a hot shower/bath because it can dry your skin.</li>
+                        <li>Don't use bath scrubs, sponges, or loofahs because this can further irritate your skin.</li>
+                        <li>Avoid products that list alcohol or fragrance as an ingredient.</li> 
+                        <li>Apply a cool washcloth or ice to dry and/or itchy skin.</li> 
+                        <li>Use sunscreen when spending time outside.</li>
+                        <li>Add colloidal oatmeal to your baths to reduce itching.</li> 
+                        <li>Use thick moisturizers like Eucerin Advanced Repair Creme or Aquaphor Healing Ointment.</li> 
+                        <li>Use mild detergents so it won't irritate your skin.</li> 
+                    </ul>
+                    <br>    
+                    <p class="detail-pera">Preventing and Treating Pressure Ulcers and Bedsores</p>
+                    <ul class="left-side">
+                        <li>Use an air or water pad that lies on top of your mattress.</li> 
+                        <li>Use a low-air-loss bed or air fluidized bed.</li>
+                        <li>Ensure that someone changes your position every 2 hours.</li> 
+                    </ul>
+                    <br>
+                    
+                    <p class="detail-pera">How to Protect your Skin</p>
+                    <ul class="left-side">
+                        <li>Protect your skin from the sun! Use sunscreen of at least 15 SPF every two hours or every hour if you go swimming or are sweating. Also, wear loose clothing that protects your skin from the sun.</li> 
+                        <li>Limit how frequently you shave. You may want to use an electric razor or stop shaving if your skin is sore.</li> 
+                        <li>Don't use ice packs, heating pads, or bandages on the area that received radiation therapy. Also, radiation therapy can cause your skin to peel or become painful. Make sure to keep the areas that are targeted by the radiation therapy clean and dry so it doesn't become infected.</li> 
+                        <li>Use lotions or creams recommended by your health care team to prevent your skin from becoming dry and/or itchy.</li> 
+                        <li>Keep your home cool and humid.</li> 
+                        <li>Frequently change your bandages to ensure your wounds don't become infected.</li>
+                    </ul>
+                    <p class="semibold-text pt-pb">How Your Care Team can Help</p>
+
+                    <p class="detail-pera">If self-care strategies don't help, your health care team can prescribe you special dressings, antibiotics, creams, and/or medicine you can take to address your dry, itchy/blistery, or painful skin. They may also refer you to a dermatologist to help you address your skin concerns.</p>
+                    <p class="detail-pera">To learn more about dry, itchy/blistery, and painful skin click on the links below:</p>
+                     <ul class="left-side">
+                    <li><a (click)="logWebsite('https://www.cancer.net/coping-with-cancer/physical-emotional-and-social-effects-cancer/managing-physical-side-effects/skin-conditions')" href="https://www.cancer.net/coping-with-cancer/physical-emotional-and-social-effects-cancer/managing-physical-side-effects/skin-conditions" target="_blank">Go to Cancer.Net for more information on dry, itchy/blistery, and painful skin</a></li>
+                    <li><a (click)="logWebsite('https://survivorship.cancer.gov/springboard/symptoms/skin-and-nail-changes')" href="https://survivorship.cancer.gov/springboard/symptoms/skin-and-nail-changes" target="_blank">Go to Spring Beyond Cancer for more information on dry, itchy/blistery, and painful skin</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">  
+                <div class="check-detail border-top">
+                    <p class="semibold-text">All symptoms</p> 
+                    <ul class="right-side-list">
+                        <li><a href="#/symptom-library-pain">Pain</a></li>
+                        <li><a href="#/symptom-library-fatigue">Fatigue</a></li>
+                        <li><a href="#/symptom-library-depression">Sadness</a></li>
+                        <li><a href="#/symptom-library-anxiety">Anxiety</a></li> 
+                        <li><a href="#/symptom-library-insomnia">Insomnia</a></li>
+                        <li><a href="#/symptom-library-physicalfunction">Physical Function</a></li>
+                        <li><a href="#/symptom-library-nausea">Nausea & Vomiting</a></li>
+                        <li><a href="#/symptom-library-sexlife">Changes in Your Sex Life</a></li>
+                        <li><a href="#/symptom-library-breath">Shortness of Breath</a></li>
+                        <li><a href="#/symptom-library-constipation">Constipation</a></li>
+                        <li><a href="#/symptom-library-diarrhea">Diarrhea</a></li>
+                        <li><a href="#/symptom-library-neuropathy">Peripheral Neuropathy</a></li>
+                        <li><a href="#/symptom-library-lymphedema">Lymphedema</a></li>
+                        <li><a href="#/symptom-library-mouthsores">Mouth Sores</a></li>
+                        <li class="active"><a href="#/symptom-library-skin">Dry, Itchy/Blistery, or Painful Skin</a></li>  
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

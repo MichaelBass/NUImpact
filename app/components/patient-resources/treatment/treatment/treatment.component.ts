@@ -12,13 +12,12 @@ import {TimedSegment} from "../../../../timedsegment.model";
 export class TreatmentComponent implements OnInit {
 
   card1 = [];
-  card2 = [];
+
 
   constructor(private redcapService: RedcapService) { }
 
   ngOnInit() {
-    this.card1 = this.redcapService.getTreatment_Cards(0,3);
-    this.card2 = this.redcapService.getTreatment_Cards(3,5);
+    this.card1 = this.redcapService.getTreatment_Cards(0,5);
   }
 
   saveFavorite(label:string){

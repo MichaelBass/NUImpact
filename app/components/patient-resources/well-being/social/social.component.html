@@ -14,26 +14,26 @@
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
                         <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
-                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                        <a (click)= "logPDF('social.pdf')" href="assets/pdf/social.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Social Support</h2>
                     <span>Listen to the full audio of this page below</span>
                     <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
-
-                    <p class="detail-pera pt-pb">Living with cancer can be stressful. It's not always easy to express your feelings and ask for support, but doing so can ease tension and enhance wellbeing. Here are suggestions to make it easier when you reach out for support.</p>
-                    <ul class="left-side font-14 mt-30">
+                    <br><br>
+                    <p class="detail-pera">Living with cancer can be stressful. It's not always easy to express your feelings and ask for support, but doing so can ease tension and enhance wellbeing. Here are suggestions to make it easier when you reach out for support.</p>
+                    <ul class="left-side">
                         <li>Family, friends, and co-workers want to help but often don't know how. Be specific when you ask for help. Some enjoy providing practical help like meals and rides, while others are great listeners.</li>
                         <li>Most friends and family will be open to talking about cancer and its impact on your lives together, but some may have a harder time discussing the topic. Don't think that their silence means they don't care.</li> 
                         <li>If you do not feel ready to ask those close to you for support, you can also find help outside your network of family and friends. Local support groups, for example, can be a safe place to express difficult feelings and talk with others managing a similar experience.</li>
                     </ul> 
-                    <p class="bold-text">Maintaining & Strengthening Relationships</p>                    
+                    <p class="bold-text pt-pb">Maintaining & Strengthening Relationships</p>                    
                     <p>Make time to be with family/friends, as it's a good way to reduce stress. Below are a few ideas for spending more time together.</p>
-                     <ul class="left-side font-14 mt-30">
+                     <ul class="left-side">
                         <li>Family or Friend Night. Dedicate a night each week to spending time with the people you love.</li>
                         <li>Cook, exercise, or read together.</li> 
                         <li>Learn Something New. Pick a new hobby or activity to do together, like going to museums around Chicago or taking a free yoga class.</li>
                     </ul>
-                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                    <img src="assets/img/SocialSupport_B.jpg" class="mt-20" width="100%" />
                 </div>   
             </div> 
             <div class="col-md-3 col-sm-12">  
@@ -44,7 +44,11 @@
                         <li class="active" ><a [routerLink]="'/patient-resources/well-being/social'">Social Support</a></li>
                         <li><a [routerLink]="'/patient-resources/well-being/stress'">Stress Management</a></li>
                         <li><a [routerLink]="'/patient-resources/well-being/physical'">Physical Activity</a></li>
-                        <li><a [routerLink]="'/patient-resources/well-being/problem'">Problem Solving</a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/well-being/problem'">Problem Solving</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/smokingcessation'">Smoking Cessation and Substance Abuse</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/sunprotection'">Sun Protection</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/supportive'">Supportive Oncology and Palliative Care</a></li>
+                        <br><br>
                         <li><a [routerLink]="'/patient-resources/well-being'"> < BACK TO Enhancing Well-Being</a></li>
                     </ul>
                 </div>

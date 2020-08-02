@@ -14,28 +14,27 @@
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
                         <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
-                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                        <a (click)= "logPDF('stress.pdf')" href="assets/pdf/stress.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Stress Management</h2>
                     <span>Listen to the full audio of this page below</span>
                     <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
-
-                    <p class="detail-pera pt-pb">Stress is a normal part of everyday life. However, sometimes stress can feel overwhelming. Learning how to manage stress can improve your mood and overall sense of well-being.</p>
-                    <p class="bold-text">Recognizing Stress</p>
-                    <p class="detail-pera pt-pb">Recognizing how you react to stress is an important first step. The following questions will help you become more aware of how you experience stress.</p>
-                    <ul class="left-side font-14 mt-30">
+                    <br><br>
+                    <p class="detail-pera">Stress is a normal part of everyday life. However, sometimes stress can feel overwhelming. Learning how to manage stress can improve your mood and overall sense of well-being.</p>
+                    <p class="bold-text  pt-pb">Recognizing Stress</p>
+                    <p class="detail-pera">Recognizing how you react to stress is an important first step. The following questions will help you become more aware of how you experience stress.</p>
+                    <ul class="left-side">
                         <li>What situations increase my stress?</li>
                         <li>Where do you most often feel stress in your body? </li> 
                         <li>How do your thoughts and moods change when you are stressed?</li>
                     </ul> 
-                    <p class="bold-text">Strategies for Managing Stress </p>                    
-                    <p>Make time to be with family/friends, as it is a good way to reduce stress, below are a few ideas for spending more time together.</p>
-                     <ul class="left-side font-14 mt-30">
+                    <p class="bold-text  pt-pb">Strategies for Managing Stress </p>                    
+                     <ul class="left-side">
                         <li>Deep Breathing<br>Meditation helps reduce stress, in addition to improving overall health. Below is a link to a deep breathing guided meditation exercise. This exercise was designed to be done lying down on your back in a comfortable position. However, it may be helpful to practice it by sitting or standing so that you can get used to taking relaxing breaths in any position with your eyes open or closed. <iframe id="sc-widget2" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/304464880%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe></li>
                         <li>Stop Practice (Meditation)<br>This meditation is designed to be done anywhere and at any time you find yourself stressed.<br>This exercise takes about 2 minutes. <iframe id="sc-widget3" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/304172093%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe></li> 
-                        <li>Express your feelings<br>Expressing our emotions is an important part of dealing with stress.</li>
+                        <li>Express your feelings<br>People have found that when they express strong feelings like anger or sadness, they're more able to let go of them.<br>Expressing our emotions is an important part of dealing with stress.</li>
                         <li>Write About Your Feelings<br>Writing about your feelings and the stresses and events in your life provides a private way to express your feelings.<br>Below are a few ideas to explore in your journal to get to know yourself better:
-                            <ul class="left-side font-14 mt-30">
+                            <ul class="left-side">
                             <li>My favorite way to spend the day is...</li>
                             <li>Make a list of 10 things that make you smile.</li> 
                             <li>The words I'd like to live by are...</li>
@@ -46,7 +45,7 @@
                         <li>Learn a New Hobby<br>Having a new and challenging activity gives you a sense of accomplishment and provides distraction from daily worries. For example, try taking an art class or learn a new type of dance.</li>
                         <li>Take Time for Yourself<br>It's important to remember that taking care of yourself can also benefit your loved ones. The better you feel, the better you'll be able to care for or attend to the important people in your life.</li>
                     </ul>
-                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                    <img src="assets/img/StressManagement_B.jpg" class="mt-20" width="100%" />
                 </div>   
             </div> 
             <div class="col-md-3 col-sm-12">  
@@ -57,7 +56,11 @@
                         <li><a [routerLink]="'/patient-resources/well-being/social'">Social Support</a></li>
                         <li class="active" ><a [routerLink]="'/patient-resources/well-being/stress'">Stress Management</a></li>
                         <li><a [routerLink]="'/patient-resources/well-being/physical'">Physical Activity</a></li>
-                        <li><a [routerLink]="'/patient-resources/well-being/problem'">Problem Solving</a></li><br><br>
+                        <li><a [routerLink]="'/patient-resources/well-being/problem'">Problem Solving</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/smokingcessation'">Smoking Cessation and Substance Abuse</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/sunprotection'">Sun Protection</a></li>
+                        <li><a [routerLink]="'/patient-resources/well-being/supportive'">Supportive Oncology and Palliative Care</a></li>
+                        <br><br>
                         <li><a [routerLink]="'/patient-resources/well-being'"> < BACK TO Enhancing Well-Being</a></li>
                     </ul>
                 </div>

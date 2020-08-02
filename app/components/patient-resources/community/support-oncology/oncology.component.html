@@ -14,28 +14,30 @@
                 <div class="check-detail pt-0">
                     <div class="foods-btn">
                         <a (click)= "toggleFavorite()">{{ isFav ? 'Remove from favorites' : 'Add to favorites' }}<i class="{{isFav ? 'icon-like' : 'icon-my-favorites'}}"></i></a>
-                        <a href="#">Download pdf <i class="icon-pdf"></i> </a>
+                        <a (click)= "logPDF('oncology.pdf')" href="assets/pdf/oncology.pdf" target='_blank'>Download pdf <i class="icon-pdf"></i> </a>
                     </div>
                     <h2>Supportive Oncology at Northwestern Medicines</h2>
                     <span>Listen to the full audio of this page below</span>
                     <iframe id="sc-widget" width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740770405%3Fsecret_token%3Ds-ZkmD6&color=%2363599e&inverse=false&auto_play=false&show_user=true"></iframe>
-
-                    <p class="detail-pera pt-pb">Supportive oncology services complement your cancer treatment plan by providing you with emotional and practical support throughout your entire cancer journey.</p>
+                    <br> <br>
+                    <p class="detail-pera">Supportive oncology services complement your cancer treatment plan by providing you with emotional and practical support throughout your entire cancer journey.</p>
                     <p>At Northwestern Medicine, supportive oncology outpatient services include:</p>
-                    <ul class="left-side font-14 mt-30">
+                    <ul class="left-side">
                         <li>Counseling delivered by board-certified social workers and clinical counselors</li>
                         <li>Pain and symptom management (also known as palliative care)</li>
                         <li>Personalized cancer nutrition counseling</li> 
                         <li>Educational classes, support groups, and referrals to community resources</li>
                     </ul>
 
-                    <ul class="left-side font-14 mt-30">
+                    <ul class="left-side">
                         <li>Supportive Oncology in Downtown Chicago <a (click)="logWebsite('https://www.cancer.northwestern.edu/cancer-care/patient-support/our-team.html')" href="https://www.cancer.northwestern.edu/cancer-care/patient-support/our-team.html" target="_blank">-> Learn more </a> </li>
                         <li>Supportive Oncology in Northern Suburbs <a (click)="logWebsite('https://www.nm.org/conditions-and-care-areas/cancer-care/cancer-support-services/supportive-oncology-in-northern-suburbs')" href="https://www.nm.org/conditions-and-care-areas/cancer-care/cancer-support-services/supportive-oncology-in-northern-suburbs" target="_blank">-> Learn more </a> </li>
                         <li>Supportive Oncology in Western Suburbs <a (click)="logWebsite('https://www.nm.org/conditions-and-care-areas/cancer-care/cancer-support-services/supportive-oncology-in-western-suburbs')" href="https://www.nm.org/conditions-and-care-areas/cancer-care/cancer-support-services/supportive-oncology-in-western-suburbs" target="_blank">-> Learn more </a> </li> 
+                        <li>Supportive Oncology in Greater DeKalb County <a (click)="logWebsite('https://www.nm.org/conditions-and-care-areas/cancer-care/cancer-support-services/supportive-oncology-in-greater-dekalb')" href="https://www.nm.org/conditions-and-care-areas/cancer-care/cancer-support-services/supportive-oncology-in-greater-dekalb" target="_blank">-> Learn more </a> </li>
+                        <li>Supportive Oncology in Northwest Suburbs <a (click)="logWebsite('https://www.nm.org/conditions-and-care-areas/cancer-care/cancer-support-services/supportive-oncology-in-northwest-suburbs')" href="https://www.nm.org/conditions-and-care-areas/cancer-care/cancer-support-services/supportive-oncology-in-northwest-suburbs" target="_blank">-> Learn more </a> </li> 
                     </ul>
 
-                    <img src="assets/img/appetite.jpg" class="mt-20" width="100%" />
+                    <img src="assets/img/SupportOncologyatNM_B.jpg" class="mt-20" width="100%" />
                 </div>   
             </div> 
             <div class="col-md-3 col-sm-12">  
