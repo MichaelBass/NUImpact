@@ -19,7 +19,7 @@
 				<h3 class="semibold-text">Welcome to My NM Care Corner! </h3>
 				<p class="">The My NM Care Corner website is part of research study to provide more personalized symptom management experience for our patients. The information in My NM Care Corner has been developed by a team of scientists, physicians, nurses, psychologists, and social workers.</p> 
 				<p class="">In order for the website to be updated with your specific symptoms, you will need to complete your health questionnaires. The questionnaires can be accessed via My Chart and can be completed on the internet using a computer, smartphone, or a tablet.</p> 
-				<p class="">Click on this PDF to learn how to complete the health questionnaire.</p> 
+				<p class="">Click on <a (click)= "logPDF('YourVoiceBetterCare.pdf')" href="assets/pdf/YourVoiceBetterCare.pdf" target='_blank'>this PDF</a> to learn how to complete the health questionnaire.</p>
 			</div>
 		</div>
 	</div>
@@ -28,8 +28,8 @@
 		<div class="content-grid clearfix row" >
 			<div class="col-md-3" *ngFor="let cardDeatial of card">
 				<img class="study-image" [src]="cardDeatial['src']" width="100%">
-				<h4 class="semibold-text">{{cardDeatial['title']}}</h4>
-				<p>{{cardDeatial['discription']}}</p>
+				<h4 class="">{{cardDeatial['title']}}</h4>
+				<p class="">{{cardDeatial['description']}}<a href="{{cardDeatial['link']}}" target='_blank'>{{cardDeatial['target']}}</a></p>
 			</div>
 		</div>
 	</div>
