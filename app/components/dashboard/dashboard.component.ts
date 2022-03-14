@@ -42,7 +42,8 @@ export class DashboardComponent implements OnInit {
             this.helperService.setCookie("DATA", _data, 90);
           }
 
-          ts.topic = "Log-in";
+          //ts.topic = "Log-in";
+          ts.topic = "Dashboard";
           ts.quantity = 15;
 
           this.redcapService.initialTimedSegment(ts, _data).subscribe(
@@ -60,7 +61,8 @@ export class DashboardComponent implements OnInit {
           if(this.redcapService.getTimedSegment().user == "undefined"){
             var ts = new TimedSegment();
             ts.user =  this.helperService.getCookie("UUID");
-            ts.topic = "Log-in";
+            //ts.topic = "Log-in";
+            ts.topic = "Dashboard";
             ts.quantity = 15;
             this.redcapService.initialTimedSegment(ts, this.helperService.getCookie("DATA")).subscribe(
               (qs_param: any) => {

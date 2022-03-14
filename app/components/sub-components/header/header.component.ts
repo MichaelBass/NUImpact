@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 import { MatSlideToggle } from '@angular/material/slide-toggle';
+
 @Component({
 	selector: 'app-header',
 	templateUrl: './header.component.html',
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 	@ViewChild('langSlide', { static: false }) langSlideToggle: MatSlideToggle;
 	constructor(
 		public route: ActivatedRoute,
-		private router: Router,
+		private router: Router
 	) { }
 
 	ngOnInit() {
@@ -37,6 +38,11 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 		}
 	}
 */
+	playVideo(sidenav: any){
+		window.open("https://player.vimeo.com/video/408256872", "_blank");
+		sidenav.close();
+	}
+
 	navigate(route: string, sidenav: any) {
 		this.router.navigate([route]);
 		sidenav.close();

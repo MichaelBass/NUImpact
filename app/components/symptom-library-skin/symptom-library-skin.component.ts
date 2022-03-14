@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {RedcapService} from "../../services/redcap.service";
 import {TimedSegment} from "../../timedsegment.model";
 
+declare var SC;
+
 @Component({
   selector: 'app-symptom-library-skin',
   templateUrl: './symptom-library-skin.component.html',
@@ -18,6 +20,19 @@ export class SymptomLibrarySkinComponent implements OnInit {
 	    let timedSegment = this.redcapService.getTimedSegment();
 	    timedSegment.topic = "SymptomLibrary Skin";
 	    this.redcapService.setTimedSegment(timedSegment);
+
+	    var iframeElement   = document.querySelector('iframe');
+	    var iframeElementID = iframeElement.id;
+	    var widget1         = SC.Widget(iframeElement);
+
+	    var localSvc = this.redcapService;
+
+	    widget1.bind(SC.Widget.Events.PLAY, function(e) {      
+	      widget1.getCurrentSound(function(currentSound) {
+	        localSvc.logWebsite(timedSegment,currentSound.permalink,"sound file").subscribe( res => {});
+	      });
+	    });
+	    
 	  }
 
 	  logWebsite(site:string){

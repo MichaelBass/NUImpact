@@ -1,15 +1,19 @@
-<div class="home-overlay" *ngIf="isHidden">
+<div class="home-overlay" *ngIf="isHidden">-
 	<div class="row">
 		<div class="col-md-12 col-sm-12 col-xs-12">
 			<div class="video-overlay-container text-center">
 				<h4>Welcome to My NM Care Corner</h4>
 				<a class="close-icon"><img (click)="closeVideo()" src="assets/img/close.png" width="4%" alt="Close" /></a>
-				<img src="assets/img/overlay.jpg" width="100%" alt="not found">
+				<!--<img src="assets/img/overlay.jpg" width="100%" alt="not found">-->
+				<iframe src="https://player.vimeo.com/video/408256872" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 				<div class="clearfix bottom-menu">
+					<a (click)="skipVideo()">Skip this video</a>
+					<!--
 					<ul>
 						<li><a href="javascript:void(0)">Ver video en español</a></li>
 						<li><a (click)="skipVideo()">Skip this video</a></li>
 					</ul>
+					-->
 				</div>
 			</div>
 		</div>

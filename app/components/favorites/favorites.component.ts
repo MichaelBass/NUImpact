@@ -28,16 +28,10 @@ export class FavoritesComponent implements OnInit {
 
     this.redcapService.getFavorites(timedSegment.user).subscribe( res => {
       for (var i=0; i < res.length; i++){
-        console.log(res);
-
-        for (var j=0; j < _favoritecards.length; j++){
-          if(_favoritecards[j].label == res[i]){
-            _cards.push(_favoritecards[j]);
-            console.log(_favoritecards[j].label);
-          }
+        let myfavorites = _favoritecards.filter((a) => a.label === res[i]);
+        if(myfavorites.length > 0){ 
+          _cards.push(myfavorites[0]);  
         }
-     
-
       }
     } );
 
