@@ -12,7 +12,7 @@ import {TimedSegment} from "../../timedsegment.model";
 })
 export class DashboardComponent implements OnInit {
   isWarn: boolean = true;
- 
+  
   card = [];
   title: string = "Based on your responses from your recent health questionnaire, your symptom results are in the normal range with nothing significant to report on your dashboard. This may not always be the case as your symptoms may change and your dashboard will be updated each time you complete a new health questionnaire. To view the results of your health questionnaire, log into MyChart.";
   no_symptom: string = "Based on your responses from your recent health questionnaire, your symptom results are in the normal range with nothing significant to report on your dashboard. This may not always be the case as your symptoms may change and your dashboard will be updated each time you complete a new health questionnaire. To view the results of your health questionnaire, log into MyChart.";
@@ -90,7 +90,9 @@ export class DashboardComponent implements OnInit {
     this.isWarn = false;
   }
 
-  displayAll(){
+  displayAll(event){
+    let target = event.target || event.srcElement || event.currentTarget;
+    target.style.display = "none";
     this.card = this.redcapService.getSymptom_Cards(0,15);
   }
 }
